@@ -34,6 +34,7 @@ interface EventCardProps {
 
 export function EventCard({ event, onDelete }: EventCardProps) {
   const [isDetailModalOpen, setDetailModalOpen] = useState(false);
+  const eventDate = new Date(event.date);
 
   return (
     <>
@@ -46,7 +47,7 @@ export function EventCard({ event, onDelete }: EventCardProps) {
             >
               {event.title}
             </CardTitle>
-            <CardDescription>{new Date(event.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })}</CardDescription>
+            <CardDescription>{eventDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })}</CardDescription>
           </CardHeader>
           <CardContent className="h-48" onClick={() => setDetailModalOpen(true)}>
             {event.imageUrl ? (
@@ -102,5 +103,3 @@ export function EventCard({ event, onDelete }: EventCardProps) {
     </>
   );
 }
-
-    
