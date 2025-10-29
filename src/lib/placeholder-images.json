@@ -1,3 +1,184 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "ge-1",
+      "description": "Gutenberg's printing press",
+      "imageUrl": "https://images.unsplash.com/photo-1693031630369-bd429a57f115?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwcmludGluZyUyMHByZXNzfGVufDB8fHx8MTc2MTcxNzg5M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "printing press"
+    },
+    {
+      "id": "ge-2",
+      "description": "Fall of Constantinople",
+      "imageUrl": "https://images.unsplash.com/photo-1471724603960-98bc193c621d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhbmNpZW50JTIwY2l0eXxlbnwwfHx8fDE3NjE2NzU5NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ancient city"
+    },
+    {
+      "id": "ge-3",
+      "description": "Beginning of the Renaissance",
+      "imageUrl": "https://images.unsplash.com/flagged/photo-1572392640988-ba48d1a74457?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxyZW5haXNzYW5jZSUyMGFydHxlbnwwfHx8fDE3NjE2NTEzMjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "renaissance art"
+    },
+    {
+      "id": "ge-4",
+      "description": "Columbus reaches the Americas",
+      "imageUrl": "https://images.unsplash.com/photo-1625509976131-86d1ba268e09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxvbGQlMjBzaGlwfGVufDB8fHx8MTc2MTc1NDIwM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "old ship"
+    },
+    {
+      "id": "ge-5",
+      "description": "Start of the Protestant Reformation",
+      "imageUrl": "https://images.unsplash.com/photo-1496401852343-cfe57facee4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8b2xkJTIwY2h1cmNofGVufDB8fHx8MTc2MTc1NDIwM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "old church"
+    },
+    {
+      "id": "ge-6",
+      "description": "Beginning of the French Revolution",
+      "imageUrl": "https://images.unsplash.com/photo-1726347915023-1ac5ee3ec287?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxyZXZvbHV0aW9uJTIwYmF0dGxlfGVufDB8fHx8MTc2MTc1NDIwM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "revolution battle"
+    },
+    {
+      "id": "ge-7",
+      "description": "Invention of the telephone",
+      "imageUrl": "https://images.unsplash.com/photo-1557180295-76eee20ae8aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx2aW50YWdlJTIwdGVsZXBob25lfGVufDB8fHx8MTc2MTcwODA3NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "vintage telephone"
+    },
+    {
+      "id": "ge-8",
+      "description": "Wright brothers' first flight",
+      "imageUrl": "https://images.unsplash.com/photo-1640273403977-20bee775a9cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxvbGQlMjBhaXJwbGFuZXxlbnwwfHx8fDE3NjE3NTQyMDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "old airplane"
+    },
+    {
+      "id": "ge-9",
+      "description": "Discovery of Penicillin",
+      "imageUrl": "https://images.unsplash.com/photo-1582719471384-894fbb16e074?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c2NpZW5jZSUyMGxhYnxlbnwwfHx8fDE3NjE2NjczMzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "science lab"
+    },
+    {
+      "id": "ge-10",
+      "description": "Invention of the World Wide Web",
+      "imageUrl": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjb21wdXRlciUyMGNvZGV8ZW58MHx8fHwxNzYxNzAzMzMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "computer code"
+    },
+    {
+      "id": "sr-1",
+      "description": "Launch of Sputnik 1",
+      "imageUrl": "https://images.unsplash.com/photo-1446776709462-d6b525c57bd3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzYXRlbGxpdGUlMjBzcGFjZXxlbnwwfHx8fDE3NjE3MTYyODF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "satellite space"
+    },
+    {
+      "id": "sr-2",
+      "description": "Launch of Explorer 1",
+      "imageUrl": "https://images.unsplash.com/photo-1517976487492-5750f3195933?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxyb2NrZXQlMjBsYXVuY2h8ZW58MHx8fHwxNzYxNzQ3Njk4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "rocket launch"
+    },
+    {
+      "id": "sr-3",
+      "description": "Yuri Gagarin becomes the first man in space",
+      "imageUrl": "https://images.unsplash.com/photo-1536697246787-1f7ae568d89a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhc3Ryb25hdXQlMjBoZWxtZXR8ZW58MHx8fHwxNzYxNzU0MjAzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "astronaut helmet"
+    },
+    {
+      "id": "sr-4",
+      "description": "Alan Shepard becomes the first American in space",
+      "imageUrl": "https://images.unsplash.com/photo-1601892782633-675465fa7f3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzcGFjZSUyMGNhcHN1bGV8ZW58MHx8fHwxNzYxNzU0MjAzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "space capsule"
+    },
+    {
+      "id": "sr-5",
+      "description": "John Glenn orbits the Earth",
+      "imageUrl": "https://images.unsplash.com/photo-1534996858221-380b92700493?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxlYXJ0aCUyMG9yYml0fGVufDB8fHx8MTc2MTc1NDIwM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "earth orbit"
+    },
+    {
+      "id": "sr-6",
+      "description": "Valentina Tereshkova becomes the first woman in space",
+      "imageUrl": "https://images.unsplash.com/photo-1678392277306-a3f9c2c70eaa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b21hbiUyMGFzdHJvbmF1dHxlbnwwfHx8fDE3NjE3NTQyMDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman astronaut"
+    },
+    {
+      "id": "sr-7",
+      "description": "First spacewalk by Alexei Leonov",
+      "imageUrl": "https://images.unsplash.com/photo-1620428268482-cf1851a36764?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzcGFjZXdhbGslMjBhc3Ryb25hdXR8ZW58MHx8fHwxNzYxNzU0MjAzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "spacewalk astronaut"
+    },
+    {
+      "id": "sr-8",
+      "description": "Apollo 8 orbits the Moon",
+      "imageUrl": "https://images.unsplash.com/photo-1686861453864-9b2a22a97fc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtb29uJTIwc3VyZmFjZXxlbnwwfHx8fDE3NjE2NTk2MzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "moon surface"
+    },
+    {
+      "id": "sr-9",
+      "description": "Apollo 11 lands on the Moon",
+      "imageUrl": "https://images.unsplash.com/photo-1687468948114-61334bb8d9cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtb29uJTIwbGFuZGluZ3xlbnwwfHx8fDE3NjE2NjYxMTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "moon landing"
+    },
+    {
+      "id": "sr-10",
+      "description": "Launch of the International Space Station's first module",
+      "imageUrl": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzcGFjZSUyMHN0YXRpb258ZW58MHx8fHwxNzYxNzEwMzU1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "space station"
+    },
+    {
+      "id": "ww2-1",
+      "description": "Germany invades Poland",
+      "imageUrl": "https://images.unsplash.com/photo-1658607204103-207c1c027a8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx0YW5rcyUyMHdhcnxlbnwwfHx8fDE3NjE3NTQyMDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tanks war"
+    },
+    {
+      "id": "ww2-2",
+      "description": "Battle of Britain begins",
+      "imageUrl": "https://images.unsplash.com/photo-1634847339368-be8c58e8c4a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxmaWdodGVyJTIwcGxhbmVzfGVufDB8fHx8MTc2MTc1NDIwM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fighter planes"
+    },
+    {
+      "id": "ww2-3",
+      "description": "Germany invades the Soviet Union (Operation Barbarossa)",
+      "imageUrl": "https://images.unsplash.com/photo-1638519947025-153407c3c46a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx3aW50ZXIlMjB3YXJ8ZW58MHx8fHwxNzYxNzU0MjAzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "winter war"
+    },
+    {
+      "id": "ww2-4",
+      "description": "Attack on Pearl Harbor",
+      "imageUrl": "https://images.unsplash.com/photo-1649344188929-3dddeb95747d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxiYXR0bGVzaGlwJTIwZXhwbG9zaW9ufGVufDB8fHx8MTc2MTc1NDIwM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "battleship explosion"
+    },
+    {
+      "id": "ww2-5",
+      "description": "Battle of Stalingrad begins",
+      "imageUrl": "https://images.unsplash.com/photo-1638890791979-e76a1f769d05?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cnVpbmVkJTIwY2l0eXxlbnwwfHx8fDE3NjE2ODcwNDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ruined city"
+    },
+    {
+      "id": "ww2-6",
+      "description": "D-Day: Allied invasion of Normandy",
+      "imageUrl": "https://images.unsplash.com/photo-1635159195486-df88d3cea039?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiZWFjaCUyMGludmFzaW9ufGVufDB8fHx8MTc2MTc1NDIwM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "beach invasion"
+    },
+    {
+      "id": "ww2-7",
+      "description": "Battle of the Bulge",
+      "imageUrl": "https://images.unsplash.com/photo-1641743441742-8671236e38fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzbm93eSUyMGZvcmVzdHxlbnwwfHx8fDE3NjE3NTQyMDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "snowy forest"
+    },
+    {
+      "id": "ww2-8",
+      "description": "V-E Day (Victory in Europe)",
+      "imageUrl": "https://images.unsplash.com/photo-1732825605764-e98ebc7d987c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjcm93ZCUyMGNlbGVicmF0aW5nfGVufDB8fHx8MTc2MTc1NDIwM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "crowd celebrating"
+    },
+    {
+      "id": "ww2-9",
+      "description": "Atomic bombing of Hiroshima",
+      "imageUrl": "https://images.unsplash.com/photo-1669954415525-c52813168154?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhdG9taWMlMjBib21ifGVufDB8fHx8MTc2MTc1NDIwM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "atomic bomb"
+    },
+    {
+      "id": "ww2-10",
+      "description": "V-J Day (Victory over Japan)",
+      "imageUrl": "https://images.unsplash.com/photo-1664241486347-726dfd2500f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb25mZXR0aSUyMHBhcmFkZXxlbnwwfHx8fDE3NjE3NTQyMDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "confetti parade"
+    }
+  ]
 }
