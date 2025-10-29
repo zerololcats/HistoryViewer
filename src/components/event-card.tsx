@@ -7,7 +7,6 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
@@ -41,17 +40,45 @@ export function EventCard({ event, onDelete }: EventCardProps) {
       <div className="relative w-full">
         <Card className="transform transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10">
           <CardHeader>
-            <CardTitle
-              className="cursor-pointer hover:text-primary"
-              onClick={() => setDetailModalOpen(true)}
-            >
-              {event.title}
-            </CardTitle>
-            <CardDescription>{eventDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })}</CardDescription>
+            <div className="flex justify-between items-start gap-4">
+              <div className="flex-grow">
+                <CardTitle
+                  className="cursor-pointer hover:text-primary"
+                  onClick={() => setDetailModalOpen(true)}
+                >
+                  {event.title}
+                </CardTitle>
+                <CardDescription>{eventDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })}</CardDescription>
+              </div>
+              <AlertDialog>
+                <AlertDialogTrigger asChild>
+                  <Button variant="ghost" size="icon" className="shrink-0">
+                    <Trash2 className="h-4 w-4 text-muted-foreground hover:text-destructive" />
+                  </Button>
+                </AlertDialogTrigger>
+                <AlertDialogContent>
+                  <AlertDialogHeader>
+                    <AlertDialogTitle>Are you sure?</AlertDialogTitle>
+                    <AlertDialogDescription>
+                      This action cannot be undone. This will permanently delete the event &quot;{event.title}&quot;.
+                    </AlertDialogDescription>
+                  </AlertDialogHeader>
+                  <AlertDialogFooter>
+                    <AlertDialogCancel>Cancel</AlertDialogCancel>
+                    <AlertDialogAction
+                      onClick={onDelete}
+                      className="bg-destructive text-destructive-foreground hover:bg-destructive/90"
+                    >
+                      Delete
+                    </AlertDialogAction>
+                  </AlertDialogFooter>
+                </AlertDialogContent>
+              </AlertDialog>
+            </div>
           </CardHeader>
-          <CardContent className="h-48" onClick={() => setDetailModalOpen(true)}>
+          <CardContent className="h-48 cursor-pointer" onClick={() => setDetailModalOpen(true)}>
             {event.imageUrl ? (
-              <div className="relative h-full w-full overflow-hidden rounded-md cursor-pointer">
+              <div className="relative h-full w-full overflow-hidden rounded-md">
                 <Image
                   src={event.imageUrl}
                   alt={event.title}
@@ -61,37 +88,11 @@ export function EventCard({ event, onDelete }: EventCardProps) {
                 />
               </div>
             ) : (
-              <div className="flex h-full w-full items-center justify-center rounded-md bg-secondary cursor-pointer">
+              <div className="flex h-full w-full items-center justify-center rounded-md bg-secondary">
                 <p className="text-muted-foreground">No Image</p>
               </div>
             )}
           </CardContent>
-          <CardFooter className="flex justify-end">
-            <AlertDialog>
-              <AlertDialogTrigger asChild>
-                <Button variant="ghost" size="icon">
-                  <Trash2 className="h-4 w-4 text-muted-foreground hover:text-destructive" />
-                </Button>
-              </AlertDialogTrigger>
-              <AlertDialogContent>
-                <AlertDialogHeader>
-                  <AlertDialogTitle>Are you sure?</AlertDialogTitle>
-                  <AlertDialogDescription>
-                    This action cannot be undone. This will permanently delete the event &quot;{event.title}&quot;.
-                  </AlertDialogDescription>
-                </AlertDialogHeader>
-                <AlertDialogFooter>
-                  <AlertDialogCancel>Cancel</AlertDialogCancel>
-                  <AlertDialogAction
-                    onClick={onDelete}
-                    className="bg-destructive text-destructive-foreground hover:bg-destructive/90"
-                  >
-                    Delete
-                  </AlertDialogAction>
-                </AlertDialogFooter>
-              </AlertDialogContent>
-            </AlertDialog>
-          </CardFooter>
         </Card>
       </div>
 

@@ -184,7 +184,7 @@ export default function Home() {
                     <div key={event.id} className="relative flex flex-col items-center">
                       
                       {/* Event Card */}
-                      <div className={cn("w-64", {
+                      <div className={cn("w-72", {
                         "absolute bottom-full mb-8": position === "top",
                         "absolute top-full mt-8": position === "bottom",
                       })}>
