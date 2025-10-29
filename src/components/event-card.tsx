@@ -39,7 +39,7 @@ export function EventCard({ event, category, onDelete, position }: EventCardProp
   const [isDetailModalOpen, setDetailModalOpen] = useState(false);
   const CategoryIcon = Icons[category];
 
-  const eventYear = new Date(event.date).getFullYear();
+  const eventYear = new Date(event.date).getUTCFullYear();
 
   return (
     <>
