@@ -25,7 +25,6 @@ import {
 import { Trash2 } from "lucide-react";
 import type { TimelineEvent } from "@/lib/types";
 import { EventDetailModal } from "./event-detail-modal";
-import { cn } from "@/lib/utils";
 
 interface EventCardProps {
   event: TimelineEvent;
@@ -46,7 +45,7 @@ export function EventCard({ event, onDelete }: EventCardProps) {
             >
               {event.title}
             </CardTitle>
-            <CardDescription>{event.date}</CardDescription>
+            <CardDescription>{new Date(event.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })}</CardDescription>
           </CardHeader>
           <CardContent className="h-48" onClick={() => setDetailModalOpen(true)}>
             {event.imageUrl ? (

@@ -76,7 +76,7 @@ export default function Home() {
 
     const onMouseDown = (e: MouseEvent) => {
       // Prevent drag from starting on interactive elements
-      if (e.target instanceof HTMLElement && e.target.closest('button, a, [role="button"]')) {
+      if (e.target instanceof HTMLElement && e.target.closest('button, a, [role="button"], [role="dialog"]')) {
         return;
       }
       setIsDragging(true);
@@ -158,18 +158,15 @@ export default function Home() {
               <div className="absolute top-1/2 left-0 right-0 h-1 -translate-y-1/2 bg-border" />
 
               {/* Events */}
-              <div className="relative flex items-center h-full gap-16">
+              <div className="relative flex h-full gap-16">
                 {selectedTimeline.events.map((event, index) => {
                   const position = index % 2 === 0 ? "top" : "bottom";
                   return (
-                    <div key={event.id} className="relative flex flex-col items-center">
-                        {/* Vertical line connector */}
-                        <div className={cn("absolute bg-border w-0.5", {
-                            "top-1/2 h-1/2": position === "bottom",
-                            "bottom-1/2 h-1/2": position === "top",
-                        })} />
-
-                        {/* Year Marker on Timeline */}
+                    <div key={event.id} className={cn("relative w-80 shrink-0 flex flex-col justify-center", {
+                        "pt-12": position === "bottom",
+                        "pb-12": position === "top",
+                    })}>
+                        {/* Year Marker and dot on Timeline */}
                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
                             <div className="h-3 w-3 rounded-full bg-primary border-2 border-background"></div>
                              <div className="absolute top-5 text-xs font-semibold text-muted-foreground">
@@ -178,9 +175,9 @@ export default function Home() {
                         </div>
 
                       <div
-                        className={cn("w-80 shrink-0", {
-                          "mb-[calc(50%+2rem)]": position === "top",
-                          "mt-[calc(50%+2rem)]": position === "bottom",
+                        className={cn("w-full", {
+                          "mb-auto": position === "top",
+                          "mt-auto": position === "bottom",
                         })}
                       >
                          <EventCard
