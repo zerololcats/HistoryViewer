@@ -159,7 +159,7 @@ export default function Home() {
               {/* Central Timeline Bar */}
               <div className="absolute top-1/2 left-0 w-full h-1 bg-border -translate-y-1/2" />
 
-              <div className="relative flex justify-start items-start gap-16">
+              <div className="relative flex justify-start items-start gap-x-60">
                 {selectedTimeline.events.map((event, index) => {
                   const position = index % 2 === 0 ? "top" : "bottom";
                   return (
