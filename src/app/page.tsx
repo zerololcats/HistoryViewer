@@ -12,7 +12,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { PlusCircle } from "lucide-react";
+import { Plus } from "lucide-react";
 import { AddEventModal } from "@/components/add-event-modal";
 import { EventCard } from "@/components/event-card";
 import { cn } from "@/lib/utils";
@@ -150,10 +150,6 @@ export default function Home() {
                 ))}
               </SelectContent>
             </Select>
-            <Button onClick={() => setAddModalOpen(true)}>
-              <PlusCircle className="mr-2 h-4 w-4" />
-              Add Event
-            </Button>
           </div>
         </div>
       </header>
@@ -225,6 +221,14 @@ export default function Home() {
           </div>
         )}
       </main>
+
+      <Button
+        onClick={() => setAddModalOpen(true)}
+        className="fixed bottom-8 right-8 h-16 w-16 rounded-full bg-primary text-primary-foreground shadow-xl transition-transform hover:scale-110"
+        aria-label="Add Event"
+      >
+        <Plus className="h-8 w-8" />
+      </Button>
 
       <AddEventModal
         isOpen={isAddModalOpen}
