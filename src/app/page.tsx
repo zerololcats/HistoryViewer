@@ -227,7 +227,7 @@ export default function Home() {
         className="fixed bottom-8 right-8 h-16 w-16 rounded-full bg-primary text-primary-foreground shadow-xl transition-transform hover:scale-110 border-2 border-accent"
         aria-label="Add Event"
       >
-        <Plus className="h-10 w-10" />
+        <Plus className="h-12 w-12" />
       </Button>
 
       <AddEventModal
