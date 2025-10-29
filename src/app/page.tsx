@@ -65,12 +65,6 @@ export default function Home() {
     );
   };
 
-  const years = useMemo(() => {
-    if (!selectedTimeline) return [];
-    const eventYears = selectedTimeline.events.map(event => new Date(event.date).getUTCFullYear());
-    return Array.from(new Set(eventYears)).sort();
-  }, [selectedTimeline]);
-
   const timelineRef = useRef<HTMLDivElement>(null);
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
@@ -81,6 +75,10 @@ export default function Home() {
     if (!timeline) return;
 
     const onMouseDown = (e: MouseEvent) => {
+      // Prevent drag from starting on interactive elements
+      if (e.target instanceof HTMLElement && e.target.closest('button, a, [role="button"]')) {
+        return;
+      }
       setIsDragging(true);
       setStartX(e.pageX - timeline.offsetLeft);
       setScrollLeft(timeline.scrollLeft);
@@ -150,23 +148,49 @@ export default function Home() {
 
       <main className="flex flex-col flex-grow overflow-hidden">
         {selectedTimeline ? (
-          <div 
+           <div
             ref={timelineRef}
-            className={cn("relative flex-grow overflow-x-auto cursor-grab", { 'cursor-grabbing': isDragging })}
+            className={cn("flex-grow overflow-x-auto overflow-y-hidden cursor-grab", { 'cursor-grabbing': isDragging })}
             style={{ WebkitOverflowScrolling: 'touch' }}
-            >
-            <div className="relative h-full flex items-center px-8">
-              <div className="absolute top-1/2 left-0 right-0 h-0.5 -translate-y-1/2 bg-border" />
-              <div className="relative flex h-full items-center gap-8 py-8 w-max">
-                {selectedTimeline.events.map((event, index) => (
-                  <EventCard
-                    key={event.id}
-                    event={event}
-                    category={selectedTimeline.category}
-                    onDelete={() => handleDeleteEvent(event.id)}
-                    position={index % 2 === 0 ? "top" : "bottom"}
-                  />
-                ))}
+          >
+            <div className="relative h-full flex items-center w-max px-16">
+              {/* Timeline Bar */}
+              <div className="absolute top-1/2 left-0 right-0 h-1 -translate-y-1/2 bg-border" />
+
+              {/* Events */}
+              <div className="relative flex items-center h-full gap-16">
+                {selectedTimeline.events.map((event, index) => {
+                  const position = index % 2 === 0 ? "top" : "bottom";
+                  return (
+                    <div key={event.id} className="relative flex flex-col items-center">
+                        {/* Vertical line connector */}
+                        <div className={cn("absolute bg-border w-0.5", {
+                            "top-1/2 h-1/2": position === "bottom",
+                            "bottom-1/2 h-1/2": position === "top",
+                        })} />
+
+                        {/* Year Marker on Timeline */}
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+                            <div className="h-3 w-3 rounded-full bg-primary border-2 border-background"></div>
+                             <div className="absolute top-5 text-xs font-semibold text-muted-foreground">
+                               {new Date(event.date).getUTCFullYear()}
+                            </div>
+                        </div>
+
+                      <div
+                        className={cn("w-80 shrink-0", {
+                          "mb-[calc(50%+2rem)]": position === "top",
+                          "mt-[calc(50%+2rem)]": position === "bottom",
+                        })}
+                      >
+                         <EventCard
+                           event={event}
+                           onDelete={() => handleDeleteEvent(event.id)}
+                         />
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>

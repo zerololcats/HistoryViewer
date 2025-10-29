@@ -29,30 +29,15 @@ import { cn } from "@/lib/utils";
 
 interface EventCardProps {
   event: TimelineEvent;
-  category: "general" | "space" | "war";
   onDelete: () => void;
-  position: "top" | "bottom";
 }
 
-export function EventCard({ event, onDelete, position }: EventCardProps) {
+export function EventCard({ event, onDelete }: EventCardProps) {
   const [isDetailModalOpen, setDetailModalOpen] = useState(false);
-
-  const eventYear = new Date(event.date).getUTCFullYear();
 
   return (
     <>
-      <div
-        className={cn("relative w-80 shrink-0", {
-          "self-end pb-8": position === "top",
-          "self-start pt-8": position === "bottom",
-        })}
-      >
-        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" >
-             <div className="absolute left-1/2 -translate-x-1/2 mt-1 text-xs font-semibold text-muted-foreground bg-background px-1">
-               {eventYear}
-             </div>
-         </div>
-
+      <div className="relative w-full">
         <Card className="transform transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10">
           <CardHeader>
             <CardTitle
@@ -63,9 +48,9 @@ export function EventCard({ event, onDelete, position }: EventCardProps) {
             </CardTitle>
             <CardDescription>{event.date}</CardDescription>
           </CardHeader>
-          <CardContent className="h-48">
+          <CardContent className="h-48" onClick={() => setDetailModalOpen(true)}>
             {event.imageUrl ? (
-              <div className="relative h-full w-full overflow-hidden rounded-md">
+              <div className="relative h-full w-full overflow-hidden rounded-md cursor-pointer">
                 <Image
                   src={event.imageUrl}
                   alt={event.title}
@@ -75,7 +60,7 @@ export function EventCard({ event, onDelete, position }: EventCardProps) {
                 />
               </div>
             ) : (
-              <div className="flex h-full w-full items-center justify-center rounded-md bg-secondary">
+              <div className="flex h-full w-full items-center justify-center rounded-md bg-secondary cursor-pointer">
                 <p className="text-muted-foreground">No Image</p>
               </div>
             )}
