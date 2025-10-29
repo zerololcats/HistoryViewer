@@ -133,7 +133,7 @@ export default function Home() {
     <div className="flex flex-col min-h-dvh bg-background">
       <header className="sticky top-0 z-20 w-full border-b bg-background/90 backdrop-blur-sm">
         <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
-          <h1 className="text-2xl font-bold text-primary">History Viewer</h1>
+          <h1 className="text-2xl font-headline font-bold text-foreground">History Viewer</h1>
           <div className="flex items-center gap-4">
             <Select
               value={selectedTimelineId}
@@ -227,7 +227,7 @@ export default function Home() {
         className="fixed bottom-8 right-8 h-16 w-16 rounded-full bg-primary text-primary-foreground shadow-xl transition-transform hover:scale-110 border-2 border-accent"
         aria-label="Add Event"
       >
-        <Plus className="h-8 w-8" />
+        <Plus className="h-10 w-10" />
       </Button>
 
       <AddEventModal
