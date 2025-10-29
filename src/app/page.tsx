@@ -66,7 +66,7 @@ export default function Home() {
 
   const years = useMemo(() => {
     if (!selectedTimeline) return [];
-    const eventYears = selectedTimeline.events.map(event => new Date(event.date).getFullYear());
+    const eventYears = selectedTimeline.events.map(event => new Date(event.date).getUTCFullYear());
     return Array.from(new Set(eventYears)).sort();
   }, [selectedTimeline]);
 
@@ -99,9 +99,9 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="flex-grow overflow-hidden">
+      <main className="flex flex-col flex-grow overflow-hidden">
         {selectedTimeline ? (
-          <div className="relative flex-grow p-4 md:p-8 h-[600px] flex items-center">
+          <div className="relative flex-grow p-4 md:p-8 flex items-center">
             <div className="absolute left-0 right-0 top-1/2 h-0.5 -translate-y-1/2 bg-border" />
             <div className="relative flex items-center gap-8 overflow-x-auto p-8 h-full w-full">
               {selectedTimeline.events.map((event, index) => (
