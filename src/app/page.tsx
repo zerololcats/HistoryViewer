@@ -23,6 +23,7 @@ export default function Home() {
     initialTimelines[0]?.id || ""
   );
   const [isAddModalOpen, setAddModalOpen] = useState(false);
+  const [zoom, setZoom] = useState(0.9);
 
   const selectedTimeline = useMemo(
     () => timelines.find((t) => t.id === selectedTimelineId),
@@ -102,17 +103,28 @@ export default function Home() {
       const walk = (x - startX) * 2;
       timeline.scrollLeft = scrollLeft - walk;
     };
+    
+    const onWheel = (e: WheelEvent) => {
+      e.preventDefault();
+      setZoom((prevZoom) => {
+        const newZoom = prevZoom - e.deltaY * 0.001;
+        return Math.min(Math.max(newZoom, 0.5), 2); // Clamp zoom between 0.5 and 2
+      });
+    };
 
     timeline.addEventListener('mousedown', onMouseDown);
     timeline.addEventListener('mouseleave', onMouseLeave);
     timeline.addEventListener('mouseup', onMouseUp);
     timeline.addEventListener('mousemove', onMouseMove);
+    timeline.addEventListener('wheel', onWheel, { passive: false });
+
 
     return () => {
       timeline.removeEventListener('mousedown', onMouseDown);
       timeline.removeEventListener('mouseleave', onMouseLeave);
       timeline.removeEventListener('mouseup', onMouseUp);
       timeline.removeEventListener('mousemove', onMouseMove);
+      timeline.removeEventListener('wheel', onWheel);
     };
   }, [isDragging, startX, scrollLeft]);
 
@@ -151,11 +163,17 @@ export default function Home() {
            <div
             ref={timelineRef}
             className={cn(
-              "flex-grow overflow-x-auto overflow-y-hidden cursor-grab flex items-center",
+              "flex-grow overflow-auto cursor-grab flex items-center",
               { 'cursor-grabbing': isDragging }
             )}
           >
-            <div className="relative flex items-center px-16 py-8 h-full">
+            <div 
+              className="relative flex items-center h-full px-16 py-8"
+              style={{
+                transform: `scale(${zoom})`,
+                transformOrigin: 'center'
+              }}
+            >
               {/* Central Timeline Bar */}
               <div className="absolute top-1/2 left-0 w-full h-1 bg-border -translate-y-1/2" />
 
