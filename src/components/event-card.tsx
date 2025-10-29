@@ -45,24 +45,24 @@ export function EventCard({ event, category, onDelete, position }: EventCardProp
     <>
       <div
         className={cn("relative w-80 shrink-0", {
-          "self-start": position === "bottom",
-          "self-end": position === "top",
+          "self-start pt-16": position === "bottom",
+          "self-end pb-16": position === "top",
         })}
       >
-        <div className="absolute left-1/2 -translate-x-1/2 w-0.5 h-6 bg-border" style={position === 'top' ? { bottom: '-1.5rem' } : { top: '-1.5rem' }}/>
-        <div className="absolute left-1/2 -translate-x-1/2" style={position === 'top' ? { bottom: '-2.75rem' } : { top: '-2.75rem' }}>
-            <div className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-accent bg-background">
-                <CategoryIcon className="h-5 w-5 text-accent" />
+        <div className="absolute left-1/2 -translate-x-1/2 w-0.5 h-16 bg-border" style={position === 'top' ? { bottom: '0' } : { top: '0' }}/>
+        <div className="absolute left-1/2 -translate-x-1/2" style={position === 'top' ? { bottom: '-1.25rem' } : { top: '-1.25rem' }}>
+            <div className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-primary bg-background">
+                <CategoryIcon className="h-5 w-5 text-primary" />
             </div>
             <div className="absolute left-1/2 -translate-x-1/2 mt-1 text-xs font-semibold text-muted-foreground bg-background px-1">
               {eventYear}
             </div>
         </div>
 
-        <Card className="transform transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-accent/10">
+        <Card className="transform transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10">
           <CardHeader>
             <CardTitle
-              className="cursor-pointer hover:text-accent"
+              className="cursor-pointer hover:text-primary"
               onClick={() => setDetailModalOpen(true)}
             >
               {event.title}
