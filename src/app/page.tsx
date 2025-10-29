@@ -155,7 +155,7 @@ export default function Home() {
               { 'cursor-grabbing': isDragging }
             )}
           >
-            <div className="relative w-full h-full flex items-center px-16 py-8">
+            <div className="relative flex items-center px-16 py-8 h-full">
               {/* Central Timeline Bar */}
               <div className="absolute top-1/2 left-0 w-full h-1 bg-border -translate-y-1/2" />
 
