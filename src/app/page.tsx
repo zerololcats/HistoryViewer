@@ -163,11 +163,11 @@ export default function Home() {
                     {selectedTimeline.events.map((event, index) => {
                     const position = index % 2 === 0 ? "top" : "bottom";
                     return (
-                        <div key={event.id} className="relative w-80 shrink-0 flex flex-col items-center">
+                        <div key={event.id} className="relative w-64 shrink-0 flex flex-col items-center">
                             {/* Card - positioned above or below */}
                             <div className={cn("w-full", {
-                                "order-1 mb-8": position === "top",
-                                "order-3 mt-8": position === "bottom",
+                                "order-1 mb-10": position === "top",
+                                "order-3 mt-10": position === "bottom",
                             })}>
                                 <EventCard
                                 event={event}
