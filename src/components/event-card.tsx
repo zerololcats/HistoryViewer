@@ -26,27 +26,40 @@ import { Trash2 } from "lucide-react";
 import type { TimelineEvent } from "@/lib/types";
 import { EventDetailModal } from "./event-detail-modal";
 import { Icons } from "./icons";
+import { cn } from "@/lib/utils";
 
 interface EventCardProps {
   event: TimelineEvent;
   category: "general" | "space" | "war";
   onDelete: () => void;
+  position: "top" | "bottom";
 }
 
-export function EventCard({ event, category, onDelete }: EventCardProps) {
+export function EventCard({ event, category, onDelete, position }: EventCardProps) {
   const [isDetailModalOpen, setDetailModalOpen] = useState(false);
   const CategoryIcon = Icons[category];
 
+  const eventYear = new Date(event.date).getFullYear();
+
   return (
     <>
-      <div className="relative pt-6">
-        <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 transform">
-          <div className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-accent bg-background">
-            <CategoryIcon className="h-5 w-5 text-accent" />
-          </div>
+      <div
+        className={cn("relative w-80 shrink-0", {
+          "self-start": position === "bottom",
+          "self-end": position === "top",
+        })}
+      >
+        <div className="absolute left-1/2 -translate-x-1/2 w-0.5 h-6 bg-border" style={position === 'top' ? { bottom: '-1.5rem' } : { top: '-1.5rem' }}/>
+        <div className="absolute left-1/2 -translate-x-1/2" style={position === 'top' ? { bottom: '-2.75rem' } : { top: '-2.75rem' }}>
+            <div className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-accent bg-background">
+                <CategoryIcon className="h-5 w-5 text-accent" />
+            </div>
+            <div className="absolute left-1/2 -translate-x-1/2 mt-1 text-xs font-semibold text-muted-foreground bg-background px-1">
+              {eventYear}
+            </div>
         </div>
 
-        <Card className="w-80 shrink-0 transform transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-accent/10">
+        <Card className="transform transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-accent/10">
           <CardHeader>
             <CardTitle
               className="cursor-pointer hover:text-accent"
