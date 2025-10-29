@@ -76,7 +76,6 @@ export default function Home() {
     if (!timeline) return;
 
     const onMouseDown = (e: MouseEvent) => {
-      // Prevent drag from starting on interactive elements
       if (e.target instanceof HTMLElement && e.target.closest('button, a, [role="button"], [role="dialog"]')) {
         return;
       }
@@ -100,7 +99,7 @@ export default function Home() {
       if (!isDragging) return;
       e.preventDefault();
       const x = e.pageX - timeline.offsetLeft;
-      const walk = (x - startX) * 2; //scroll-fast
+      const walk = (x - startX) * 2;
       timeline.scrollLeft = scrollLeft - walk;
     };
 
@@ -151,48 +150,52 @@ export default function Home() {
         {selectedTimeline ? (
            <div
             ref={timelineRef}
-            className={cn("flex-grow overflow-x-auto overflow-y-hidden cursor-grab flex items-center", { 'cursor-grabbing': isDragging })}
+            className={cn("flex-grow overflow-x-auto overflow-y-hidden cursor-grab flex", { 'cursor-grabbing': isDragging })}
             style={{ WebkitOverflowScrolling: 'touch' }}
           >
-            <div className="relative w-max px-16 py-24">
-              {/* Timeline Bar */}
-              <div className="absolute top-1/2 left-0 right-0 h-1 -translate-y-1/2 bg-border" />
+            <div className="flex-grow flex items-center justify-center min-h-full">
+                <div className="relative w-max px-16 py-24">
+                {/* Timeline Bar */}
+                <div className="absolute top-1/2 left-0 right-0 h-1 -translate-y-1/2 bg-border" />
 
-              {/* Events */}
-              <div className="relative flex items-start gap-16">
-                {selectedTimeline.events.map((event, index) => {
-                  const position = index % 2 === 0 ? "top" : "bottom";
-                  return (
-                    <div key={event.id} className={cn("relative w-80 shrink-0")}>
-                        {/* Connecting line and dot */}
-                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 flex flex-col items-center">
-                            {/* Dot on Timeline */}
-                            <div className="h-3 w-3 rounded-full bg-primary border-2 border-background z-10"></div>
-                             {/* Year Marker */}
-                            <div className="absolute top-5 text-xs font-semibold text-muted-foreground bg-background px-1 z-10">
-                               {new Date(event.date).getUTCFullYear()}
+                {/* Events */}
+                <div className="relative flex items-start gap-16">
+                    {selectedTimeline.events.map((event, index) => {
+                    const position = index % 2 === 0 ? "top" : "bottom";
+                    return (
+                        <div key={event.id} className="relative w-80 shrink-0 flex flex-col items-center">
+                            {/* Card - positioned above or below */}
+                            <div className={cn("w-full", {
+                                "order-1 mb-8": position === "top",
+                                "order-3 mt-8": position === "bottom",
+                            })}>
+                                <EventCard
+                                event={event}
+                                onDelete={() => handleDeleteEvent(event.id)}
+                                />
                             </div>
-                            {/* Trailing line */}
-                            <div className={cn("absolute left-1/2 -translate-x-1/2 h-20 w-px bg-border",
-                                position === "top" ? "bottom-full mb-0" : "top-full mt-0"
-                            )}></div>
-                        </div>
 
-                      <div
-                        className={cn("w-full", {
-                          "pb-[7rem]": position === "top", // space for line + gap
-                          "pt-[7rem]": position === "bottom", // space for line + gap
-                        })}
-                      >
-                         <EventCard
-                           event={event}
-                           onDelete={() => handleDeleteEvent(event.id)}
-                         />
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
+                            {/* Connecting line, dot, and year */}
+                            <div className={cn("order-2 flex flex-col items-center")}>
+                                {/* Trailing line */}
+                                <div className={cn("h-8 w-px bg-border", {
+                                    "order-3": position === "top", // Line is below dot
+                                    "order-1": position === "bottom", // Line is above dot
+                                })}></div>
+
+                                {/* Dot on Timeline */}
+                                <div className="order-2 h-3 w-3 rounded-full bg-primary border-2 border-background z-10"></div>
+                                
+                                {/* Year Marker on Timeline */}
+                                <div className="absolute top-1/2 mt-4 text-xs font-semibold text-muted-foreground bg-background px-1 z-10">
+                                    {new Date(event.date).getUTCFullYear()}
+                                </div>
+                            </div>
+                        </div>
+                    );
+                    })}
+                </div>
+                </div>
             </div>
           </div>
         ) : (
@@ -212,5 +215,3 @@ export default function Home() {
     </div>
   );
 }
-
-    
