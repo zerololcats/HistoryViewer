@@ -43,16 +43,15 @@ export function EventCard({ event, onDelete, position }: EventCardProps) {
     <>
       <div
         className={cn("relative w-80 shrink-0", {
-          "self-end pb-16": position === "top",
-          "self-start pt-16": position === "bottom",
+          "self-end pb-8": position === "top",
+          "self-start pt-8": position === "bottom",
         })}
       >
-        <div className="absolute left-1/2 -translate-x-1/2 w-0.5 h-8 bg-border" style={position === 'top' ? { bottom: '0' } : { top: '0' }}/>
-        <div className="absolute left-1/2 -translate-x-1/2" style={position === 'top' ? { bottom: '-1.25rem' } : { top: '-1.25rem' }}>
-            <div className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-primary bg-background">
-                <div className="text-sm font-bold text-primary">{eventYear}</div>
-            </div>
-        </div>
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" >
+             <div className="absolute left-1/2 -translate-x-1/2 mt-1 text-xs font-semibold text-muted-foreground bg-background px-1">
+               {eventYear}
+             </div>
+         </div>
 
         <Card className="transform transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10">
           <CardHeader>
