@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useMemo, useRef, useEffect } from "react";
@@ -150,34 +151,37 @@ export default function Home() {
         {selectedTimeline ? (
            <div
             ref={timelineRef}
-            className={cn("flex-grow overflow-x-auto overflow-y-hidden cursor-grab", { 'cursor-grabbing': isDragging })}
+            className={cn("flex-grow overflow-x-auto overflow-y-hidden cursor-grab flex items-center", { 'cursor-grabbing': isDragging })}
             style={{ WebkitOverflowScrolling: 'touch' }}
           >
-            <div className="relative h-full flex items-center w-max px-16">
+            <div className="relative w-max px-16 py-24">
               {/* Timeline Bar */}
               <div className="absolute top-1/2 left-0 right-0 h-1 -translate-y-1/2 bg-border" />
 
               {/* Events */}
-              <div className="relative flex h-full gap-16">
+              <div className="relative flex items-start gap-16">
                 {selectedTimeline.events.map((event, index) => {
                   const position = index % 2 === 0 ? "top" : "bottom";
                   return (
-                    <div key={event.id} className={cn("relative w-80 shrink-0 flex flex-col justify-center", {
-                        "pt-12": position === "bottom",
-                        "pb-12": position === "top",
-                    })}>
-                        {/* Year Marker and dot on Timeline */}
-                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
-                            <div className="h-3 w-3 rounded-full bg-primary border-2 border-background"></div>
-                             <div className="absolute top-5 text-xs font-semibold text-muted-foreground">
+                    <div key={event.id} className={cn("relative w-80 shrink-0")}>
+                        {/* Connecting line and dot */}
+                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 flex flex-col items-center">
+                            {/* Dot on Timeline */}
+                            <div className="h-3 w-3 rounded-full bg-primary border-2 border-background z-10"></div>
+                             {/* Year Marker */}
+                            <div className="absolute top-5 text-xs font-semibold text-muted-foreground bg-background px-1 z-10">
                                {new Date(event.date).getUTCFullYear()}
                             </div>
+                            {/* Trailing line */}
+                            <div className={cn("absolute left-1/2 -translate-x-1/2 h-20 w-px bg-border",
+                                position === "top" ? "bottom-full mb-0" : "top-full mt-0"
+                            )}></div>
                         </div>
 
                       <div
                         className={cn("w-full", {
-                          "mb-auto": position === "top",
-                          "mt-auto": position === "bottom",
+                          "pb-[7rem]": position === "top", // space for line + gap
+                          "pt-[7rem]": position === "bottom", // space for line + gap
                         })}
                       >
                          <EventCard
@@ -208,3 +212,5 @@ export default function Home() {
     </div>
   );
 }
+
+    

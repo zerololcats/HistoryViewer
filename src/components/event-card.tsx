@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState } from "react";
@@ -101,3 +102,5 @@ export function EventCard({ event, onDelete }: EventCardProps) {
     </>
   );
 }
+
+    
