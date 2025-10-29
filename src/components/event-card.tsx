@@ -25,7 +25,6 @@ import {
 import { Trash2 } from "lucide-react";
 import type { TimelineEvent } from "@/lib/types";
 import { EventDetailModal } from "./event-detail-modal";
-import { Icons } from "./icons";
 import { cn } from "@/lib/utils";
 
 interface EventCardProps {
@@ -35,9 +34,8 @@ interface EventCardProps {
   position: "top" | "bottom";
 }
 
-export function EventCard({ event, category, onDelete, position }: EventCardProps) {
+export function EventCard({ event, onDelete, position }: EventCardProps) {
   const [isDetailModalOpen, setDetailModalOpen] = useState(false);
-  const CategoryIcon = Icons[category];
 
   const eventYear = new Date(event.date).getUTCFullYear();
 
@@ -45,17 +43,14 @@ export function EventCard({ event, category, onDelete, position }: EventCardProp
     <>
       <div
         className={cn("relative w-80 shrink-0", {
-          "self-start pt-16": position === "bottom",
           "self-end pb-16": position === "top",
+          "self-start pt-16": position === "bottom",
         })}
       >
-        <div className="absolute left-1/2 -translate-x-1/2 w-0.5 h-16 bg-border" style={position === 'top' ? { bottom: '0' } : { top: '0' }}/>
+        <div className="absolute left-1/2 -translate-x-1/2 w-0.5 h-8 bg-border" style={position === 'top' ? { bottom: '0' } : { top: '0' }}/>
         <div className="absolute left-1/2 -translate-x-1/2" style={position === 'top' ? { bottom: '-1.25rem' } : { top: '-1.25rem' }}>
             <div className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-primary bg-background">
-                <CategoryIcon className="h-5 w-5 text-primary" />
-            </div>
-            <div className="absolute left-1/2 -translate-x-1/2 mt-1 text-xs font-semibold text-muted-foreground bg-background px-1">
-              {eventYear}
+                <div className="text-sm font-bold text-primary">{eventYear}</div>
             </div>
         </div>
 

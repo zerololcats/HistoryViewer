@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useRef, useEffect } from "react";
 import { initialTimelines } from "@/lib/timeline-data";
 import type { Timeline, TimelineEvent } from "@/lib/types";
 import { Button } from "@/components/ui/button";
@@ -14,6 +14,7 @@ import {
 import { PlusCircle } from "lucide-react";
 import { AddEventModal } from "@/components/add-event-modal";
 import { EventCard } from "@/components/event-card";
+import { cn } from "@/lib/utils";
 
 export default function Home() {
   const [timelines, setTimelines] = useState<Timeline[]>(initialTimelines);
@@ -70,6 +71,54 @@ export default function Home() {
     return Array.from(new Set(eventYears)).sort();
   }, [selectedTimeline]);
 
+  const timelineRef = useRef<HTMLDivElement>(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
+
+  useEffect(() => {
+    const timeline = timelineRef.current;
+    if (!timeline) return;
+
+    const onMouseDown = (e: MouseEvent) => {
+      setIsDragging(true);
+      setStartX(e.pageX - timeline.offsetLeft);
+      setScrollLeft(timeline.scrollLeft);
+      timeline.style.cursor = 'grabbing';
+    };
+
+    const onMouseLeave = () => {
+      setIsDragging(false);
+      timeline.style.cursor = 'grab';
+    };
+
+    const onMouseUp = () => {
+      setIsDragging(false);
+      timeline.style.cursor = 'grab';
+    };
+
+    const onMouseMove = (e: MouseEvent) => {
+      if (!isDragging) return;
+      e.preventDefault();
+      const x = e.pageX - timeline.offsetLeft;
+      const walk = (x - startX) * 2; //scroll-fast
+      timeline.scrollLeft = scrollLeft - walk;
+    };
+
+    timeline.addEventListener('mousedown', onMouseDown);
+    timeline.addEventListener('mouseleave', onMouseLeave);
+    timeline.addEventListener('mouseup', onMouseUp);
+    timeline.addEventListener('mousemove', onMouseMove);
+
+    return () => {
+      timeline.removeEventListener('mousedown', onMouseDown);
+      timeline.removeEventListener('mouseleave', onMouseLeave);
+      timeline.removeEventListener('mouseup', onMouseUp);
+      timeline.removeEventListener('mousemove', onMouseMove);
+    };
+  }, [isDragging, startX, scrollLeft]);
+
+
   return (
     <div className="flex flex-col min-h-dvh bg-background">
       <header className="sticky top-0 z-20 w-full border-b bg-background/90 backdrop-blur-sm">
@@ -101,18 +150,24 @@ export default function Home() {
 
       <main className="flex flex-col flex-grow overflow-hidden">
         {selectedTimeline ? (
-          <div className="relative flex-grow p-4 md:p-8 flex items-center">
-            <div className="absolute left-0 right-0 top-1/2 h-0.5 -translate-y-1/2 bg-border" />
-            <div className="relative flex items-center gap-8 overflow-x-auto p-8 h-full w-full">
-              {selectedTimeline.events.map((event, index) => (
-                <EventCard
-                  key={event.id}
-                  event={event}
-                  category={selectedTimeline.category}
-                  onDelete={() => handleDeleteEvent(event.id)}
-                  position={index % 2 === 0 ? "top" : "bottom"}
-                />
-              ))}
+          <div 
+            ref={timelineRef}
+            className={cn("relative flex-grow overflow-x-auto cursor-grab", { 'cursor-grabbing': isDragging })}
+            style={{ WebkitOverflowScrolling: 'touch' }}
+            >
+            <div className="relative h-full flex items-center px-8">
+              <div className="absolute top-1/2 left-0 right-0 h-0.5 -translate-y-1/2 bg-border" />
+              <div className="relative flex h-full items-center gap-8 py-8 w-max">
+                {selectedTimeline.events.map((event, index) => (
+                  <EventCard
+                    key={event.id}
+                    event={event}
+                    category={selectedTimeline.category}
+                    onDelete={() => handleDeleteEvent(event.id)}
+                    position={index % 2 === 0 ? "top" : "bottom"}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         ) : (
