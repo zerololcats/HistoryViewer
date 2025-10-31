@@ -33,7 +33,7 @@ export default function ConfigPage() {
         <div>
           <p>Your updated timeline data has been logged to the developer console.</p>
           <p className="mt-2">
-            Copy the JSON object from the console and paste it into the chat to have the AI permanently update the application files.
+            Copy the JSON object from the console and paste it into the chat to have me permanently update the application files.
           </p>
         </div>
       ),
@@ -66,7 +66,7 @@ export default function ConfigPage() {
             <CardHeader>
               <CardTitle>Data Management</CardTitle>
               <CardDescription>
-                Export your current timeline data to a JSON file for backup. To import changes, edit the data below and click "Save Changes". Then, copy the JSON from your browser's developer console and provide it to the AI assistant.
+                Export your current timeline data to a JSON file for backup. To save changes, edit the data below, click "Save Changes", copy the JSON from your browser's console, and provide it to me in the chat.
               </CardDescription>
             </CardHeader>
             <CardContent>
