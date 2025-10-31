@@ -68,19 +68,18 @@ export function EventDetailModal({
 
       {event.imageUrl && event.imageUrl.trim() !== '' && (
         <Dialog open={isFullImageOpen} onOpenChange={setFullImageOpen}>
-          <DialogContent className="max-w-[90vw] max-h-[90vh] h-auto w-auto flex items-center justify-center p-2 bg-transparent border-none shadow-none">
-             <VisuallyHidden asChild>
-                <DialogTitle>Full-screen image: {event.title}</DialogTitle>
-             </VisuallyHidden>
-             <div className="relative w-full h-full max-w-[90vw] max-h-[90vh]">
-                <Image
-                    src={event.imageUrl}
-                    alt={event.title}
-                    fill
-                    style={{ objectFit: 'contain' }}
-                    data-ai-hint={event.imageHint}
-                />
-             </div>
+          <DialogContent className="w-[90vw] h-[90vh] max-w-none max-h-none p-0 bg-transparent border-none shadow-none flex items-center justify-center">
+            <VisuallyHidden asChild>
+              <DialogTitle>Full-screen image: {event.title}</DialogTitle>
+            </VisuallyHidden>
+            <Image
+              src={event.imageUrl}
+              alt={event.title}
+              fill
+              style={{ objectFit: 'contain' }}
+              data-ai-hint={event.imageHint}
+              className="w-full h-full"
+            />
           </DialogContent>
         </Dialog>
       )}
