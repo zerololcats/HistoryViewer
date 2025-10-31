@@ -13,6 +13,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
 import type { TimelineEvent } from "@/lib/types";
+import { VisuallyHidden } from "@/components/ui/visually-hidden";
 
 interface EventDetailModalProps {
   event: TimelineEvent;
@@ -68,6 +69,9 @@ export function EventDetailModal({
       {event.imageUrl && event.imageUrl.trim() !== '' && (
         <Dialog open={isFullImageOpen} onOpenChange={setFullImageOpen}>
           <DialogContent className="max-w-[90vw] max-h-[90vh] h-auto w-auto flex items-center justify-center p-2 bg-transparent border-none shadow-none">
+             <VisuallyHidden asChild>
+                <DialogTitle>Full-screen image: {event.title}</DialogTitle>
+             </VisuallyHidden>
              <div className="relative w-full h-full max-w-[90vw] max-h-[90vh]">
                 <Image
                     src={event.imageUrl}
