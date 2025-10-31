@@ -2,6 +2,7 @@
 "use client";
 
 import { useState, useMemo, useRef, useEffect } from "react";
+import Link from "next/link";
 import { initialTimelines } from "@/lib/timeline-data";
 import type { Timeline, TimelineEvent } from "@/lib/types";
 import { Button } from "@/components/ui/button";
@@ -12,7 +13,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Plus } from "lucide-react";
+import { Plus, Settings } from "lucide-react";
 import { AddEventModal } from "@/components/add-event-modal";
 import { EventCard } from "@/components/event-card";
 import { cn } from "@/lib/utils";
@@ -150,6 +151,11 @@ export default function Home() {
                 ))}
               </SelectContent>
             </Select>
+            <Button asChild variant="ghost" size="icon">
+              <Link href="/config">
+                <Settings />
+              </Link>
+            </Button>
           </div>
         </div>
       </header>
