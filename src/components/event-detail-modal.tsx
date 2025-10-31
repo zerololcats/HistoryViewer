@@ -31,16 +31,16 @@ export function EventDetailModal({
       <DialogContent className="sm:max-w-2xl">
         <DialogHeader>
           <DialogTitle className="text-2xl text-primary">{event.title}</DialogTitle>
-          <DialogDescription>{event.date}</DialogDescription>
+          <DialogDescription>{new Date(event.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })}</DialogDescription>
         </DialogHeader>
         <div className="grid gap-4 py-4">
           {event.imageUrl && event.imageUrl.trim() !== '' ? (
-            <div className="relative h-64 w-full overflow-hidden rounded-md">
+            <div className="relative h-64 w-full overflow-hidden rounded-md bg-secondary">
               <Image
                 src={event.imageUrl}
                 alt={event.title}
                 fill
-                style={{ objectFit: 'cover' }}
+                style={{ objectFit: 'contain' }}
                 data-ai-hint={event.imageHint}
               />
             </div>

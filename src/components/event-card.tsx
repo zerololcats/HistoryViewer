@@ -78,12 +78,12 @@ export function EventCard({ event, onDelete }: EventCardProps) {
           </CardHeader>
           <CardContent className="h-48 cursor-pointer" onClick={() => setDetailModalOpen(true)}>
             {event.imageUrl && event.imageUrl.trim() !== '' ? (
-              <div className="relative h-full w-full overflow-hidden rounded-md">
+              <div className="relative h-full w-full overflow-hidden rounded-md bg-secondary">
                 <Image
                   src={event.imageUrl}
                   alt={event.title}
                   fill
-                  style={{ objectFit: 'cover' }}
+                  style={{ objectFit: 'contain' }}
                   data-ai-hint={event.imageHint}
                 />
               </div>
