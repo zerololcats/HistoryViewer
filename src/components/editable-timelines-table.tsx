@@ -81,9 +81,9 @@ export function EditableTimelinesTable({ timelines, setTimelines }: EditableTime
              <div className="flex items-center justify-between py-4 border-b">
                 <div className="flex items-center gap-4 flex-grow mr-4">
                     <Input
-                    value={timeline.name}
-                    onChange={(e) => handleTimelineChange(timeline.id, "name", e.target.value)}
-                    className="font-semibold text-lg"
+                        value={timeline.name}
+                        onChange={(e) => handleTimelineChange(timeline.id, "name", e.target.value)}
+                        className="font-semibold text-lg flex-grow"
                     />
                     <Select
                         value={timeline.category}
