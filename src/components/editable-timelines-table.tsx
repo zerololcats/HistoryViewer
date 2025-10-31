@@ -137,7 +137,7 @@ export function EditableTimelinesTable({ timelines, setTimelines }: EditableTime
                           <Input value={event.wikipediaUrl} onChange={e => handleEventChange(timeline.id, event.id, "wikipediaUrl", e.target.value)} />
                         </TableCell>
                         <TableCell>
-                          <Input value={event.imageHint} onChange={e => handleEventChange(timeline.id, event.id, "imageHint", e.target.value)} />
+                          <Input value={event.imageHint || ''} onChange={e => handleEventChange(timeline.id, event.id, "imageHint", e.target.value)} />
                         </TableCell>
                         <TableCell className="text-right">
                           <Button variant="ghost" size="icon" onClick={() => handleDeleteEvent(timeline.id, event.id)}>
