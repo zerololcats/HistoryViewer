@@ -10,6 +10,7 @@ import { ArrowLeft, Download, Save } from "lucide-react";
 import type { Timeline } from "@/lib/types";
 import { useToast } from "@/hooks/use-toast";
 import { EditableTimelinesTable } from "@/components/editable-timelines-table";
+import { saveTimelines } from "./actions";
 
 export default function ConfigPage() {
   const [timelines, setTimelines] = useState<Timeline[]>(initialTimelines);
@@ -25,20 +26,20 @@ export default function ConfigPage() {
     linkElement.click();
   };
 
-  const handleSave = () => {
-    console.log("Updated Timelines JSON:", JSON.stringify(timelines, null, 2));
-    toast({
-      title: "Data Ready to Save",
-      description: (
-        <div>
-          <p>Your updated timeline data has been logged to the developer console.</p>
-          <p className="mt-2">
-            Copy the JSON object from the console and paste it into the chat to have me permanently update the application files.
-          </p>
-        </div>
-      ),
-      duration: 9000,
-    });
+  const handleSave = async () => {
+    const result = await saveTimelines(timelines);
+    if (result.success) {
+      toast({
+        title: "Changes Saved!",
+        description: "Your timeline data has been permanently updated.",
+      });
+    } else {
+       toast({
+        variant: "destructive",
+        title: "Uh oh! Something went wrong.",
+        description: result.error || "Could not save your changes.",
+      });
+    }
   };
 
   return (
@@ -66,7 +67,7 @@ export default function ConfigPage() {
             <CardHeader>
               <CardTitle>Data Management</CardTitle>
               <CardDescription>
-                Export your current timeline data to a JSON file for backup. To save changes, edit the data below, click "Save Changes", copy the JSON from your browser's console, and provide it to me in the chat.
+                Export your current timeline data to a JSON file for backup. To save changes, edit the data below and click "Save Changes" in the header.
               </CardDescription>
             </CardHeader>
             <CardContent>

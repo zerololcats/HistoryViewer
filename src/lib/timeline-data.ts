@@ -3,7 +3,10 @@ import { PlaceHolderImages } from "./placeholder-images";
 
 const getImage = (id: string) => {
   const img = PlaceHolderImages.find(p => p.id === id);
-  return { imageUrl: img?.imageUrl, imageHint: img?.imageHint };
+  if (!img) {
+    return { imageUrl: "", imageHint: "" };
+  }
+  return { imageUrl: img.imageUrl, imageHint: img.imageHint };
 }
 
 export const initialTimelines: Timeline[] = [
