@@ -188,57 +188,141 @@
     },
     {
       "id": "ww1-2",
-      "description": "Sinking of the RMS Lusitania",
-      "imageUrl": "https://images.unsplash.com/photo-1549400519-715c92851d7c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjcnVpc2UlMjBzaGlwfGVufDB8fHx8MTc2MTc1NTIzNHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "cruise ship"
+      "description": "Austria-Hungary declares war on Serbia",
+      "imageUrl": "https://images.unsplash.com/photo-1596521798344-644e59048a14?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwYXBlciUyMGRlY2xhcmF0aW9ufGVufDB8fHx8MTc2MjAwNTkzM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "paper declaration"
     },
     {
       "id": "ww1-3",
-      "description": "Battle of Verdun",
-      "imageUrl": "https://images.unsplash.com/photo-1603590074212-320491032333?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx0cmVuY2glMjB3YXJmYXJlfGVufDB8fHx8MTc2MTc1NTIzNHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "trench warfare"
+      "description": "Germany invades Belgium",
+      "imageUrl": "https://images.unsplash.com/photo-1549642338-9239851e5138?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiZWxnaXVtJTIwZmxhZ3xlbnwwfHx8fDE3NjIwMDU5MzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "belgium flag"
     },
     {
       "id": "ww1-4",
-      "description": "Battle of the Somme",
+      "description": "Battle of Tannenberg",
       "imageUrl": "https://images.unsplash.com/photo-1587805134789-983e2049e7b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiYXR0bGUlMjBmaWVsZHxlbnwwfHx8fDE3NjE3NTUyMzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "battle field"
     },
     {
       "id": "ww1-5",
+      "description": "First Battle of the Marne",
+      "imageUrl": "https://images.unsplash.com/photo-1603590074212-320491032333?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx0cmVuY2glMjB3YXJmYXJlfGVufDB8fHx8MTc2MTc1NTIzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "trench warfare"
+    },
+    {
+      "id": "ww1-6",
+      "description": "Turkey joins Central Powers",
+      "imageUrl": "https://images.unsplash.com/photo-1524168282322-243b67a54a21?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0dXJraXNoJTIwZmxhZ3xlbnwwfHx8fDE3NjIwMDU5MzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "turkish flag"
+    },
+    {
+      "id": "ww1-7",
+      "description": "Sinking of the RMS Lusitania",
+      "imageUrl": "https://images.unsplash.com/photo-1549400519-715c92851d7c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjcnVpc2UlMjBzaGlwfGVufDB8fHx8MTc2MTc1NTIzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cruise ship"
+    },
+    {
+      "id": "ww1-8",
+      "description": "Battle of Verdun",
+      "imageUrl": "https://images.unsplash.com/photo-1603590074212-320491032333?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx0cmVuY2glMjB3YXJmYXJlfGVufDB8fHx8MTc2MTc1NTIzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "trench warfare"
+    },
+    {
+      "id": "ww1-9",
+      "description": "Battle of the Somme",
+      "imageUrl": "https://images.unsplash.com/photo-1587805134789-983e2049e7b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiYXR0bGUlMjBmaWVsZHxlbnwwfHx8fDE3NjE3NTUyMzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "battle field"
+    },
+    {
+      "id": "ww1-10",
       "description": "United States declares war on Germany",
       "imageUrl": "https://images.unsplash.com/photo-1575978184472-03b5a19e599b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvbGQlMjBhbWVyaWNhbiUyMGZsYWd8ZW58MHx8fHwxNzYxNzU1MjM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "american flag"
     },
     {
-      "id": "ww1-6",
+      "id": "ww1-11",
       "description": "The October Revolution in Russia",
       "imageUrl": "https://images.unsplash.com/photo-1583389783930-1ins_upload-v1627915394-s9k5b4y2h4a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzb3ZpZXQlMjByZXZvbHV0aW9ufGVufDB8fHx8MTc2MTc1NTIzNHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "soviet revolution"
     },
     {
-      "id": "ww1-7",
+      "id": "ww1-12",
       "description": "President Wilson's Fourteen Points speech",
       "imageUrl": "https://images.unsplash.com/photo-1621927719992-031e018c1d3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx1cyUyMGNhcGl0b2x8ZW58MHx8fHwxNzYxNzU1MjM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "us capitol"
     },
     {
-      "id": "ww1-8",
+      "id": "ww1-13",
       "description": "Armistice Day",
       "imageUrl": "https://images.unsplash.com/photo-1542183293-c9e2056d10f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwZWFjZSUyMGRvdmV8ZW58MHx8fHwxNzYxNzU1MjM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "peace dove"
     },
     {
-      "id": "ww1-9",
+      "id": "ww1-14",
       "description": "Treaty of Versailles is signed",
       "imageUrl": "https://images.unsplash.com/photo-1529156069898-fac519c4b73b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvZmZpY2lhbCUyMGRvY3VtZW50fGVufDB8fHx8MTc2MTc1NTIzNHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "official document"
     },
     {
-      "id": "ww1-10",
+      "id": "ww1-15",
       "description": "League of Nations is founded",
       "imageUrl": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbnRlcm5hdGlvbmFsJTIwZmxhZ3N8ZW58MHx8fHwxNzYxNzU1MjM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "international flags"
+    },
+    {
+      "id": "ww1-16",
+      "description": "Germany declares war on Russia",
+      "imageUrl": "https://images.unsplash.com/photo-1605151892866-b5278148b036?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnZXJtYW4lMjBydXNzaWFuJTIwZmxhZ3N8ZW58MHx8fHwxNzYyMDA1OTMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "german russian"
+    },
+    {
+      "id": "ww1-17",
+      "description": "Gallipoli Campaign",
+      "imageUrl": "https://images.unsplash.com/photo-1589252086915-12d837f4a56a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiZWFjaCUyMGxhbmRpbmd8ZW58MHx8fHwxNzYyMDA1OTMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "beach landing"
+    },
+    {
+      "id": "ww1-18",
+      "description": "Italy declares war on Austria-Hungary",
+      "imageUrl": "https://images.unsplash.com/photo-1618146747239-17c18a99478f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpdGFsaWFuJTIwZmxhZ3xlbnwwfHx8fDE3NjIwMDU5MzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "italian flag"
+    },
+    {
+      "id": "ww1-19",
+      "description": "Kaiser Wilhelm II abdicates",
+      "imageUrl": "https://images.unsplash.com/photo-1551299933-2868a834ab43?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjcm93biUyMG9uJTIwdmVsdmV0fGVufDB8fHx8MTc2MjAwNTkzM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "royal crown"
+    },
+    {
+      "id": "ww1-20",
+      "description": "Zimmermann Telegram",
+      "imageUrl": "https://images.unsplash.com/photo-1586749989134-36519522775f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvbGQlMjB0ZWxlZ3JhbXxlbnwwfHx8fDE3NjIwMDU5MzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "old telegram"
+    },
+    {
+      "id": "ww1-21",
+      "description": "Russia signs Treaty of Brest-Litovsk",
+      "imageUrl": "https://images.unsplash.com/photo-1529156069898-fac519c4b73b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvZmZpY2lhbCUyMGRvY3VtZW50fGVufDB8fHx8MTc2MTc1NTIzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "official document"
+    },
+    {
+      "id": "ww1-22",
+      "description": "Second Battle of the Marne",
+      "imageUrl": "https://images.unsplash.com/photo-1519782414729-198c69f70620?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyaXZlciUyMGJhdHRsZXxlbnwwfHx8fDE3NjIwMDU5MzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "river battle"
+    },
+    {
+      "id": "ww1-23",
+      "description": "Paris Peace Conference",
+      "imageUrl": "https://images.unsplash.com/photo-1518895318357-96e77e81e335?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwYXJpcyUyMGxhbmRtYXJrfGVufDB8fHx8MTc2MjAwNTkzM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "paris landmark"
+    },
+    {
+      "id": "ww1-24",
+      "description": "U.S. Senate rejects Treaty of Versailles",
+      "imageUrl": "https://images.unsplash.com/photo-1621927719992-031e018c1d3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx1cyUyMGNhcGl0b2x8ZW58MHx8fHwxNzYxNzU1MjM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "us capitol"
     }
   ]
 }
