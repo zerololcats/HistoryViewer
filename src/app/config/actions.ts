@@ -1,3 +1,4 @@
+
 'use server';
 
 import type { Timeline } from '@/lib/types';
@@ -11,14 +12,14 @@ type PlaceholderImage = {
   imageHint: string;
 };
 
-function generateTimelineDataContent(timelines: Timeline[]): string {
+function generateTimelineDataContent(timelines: Timeline[]): { timelineContent: string; placeholderImagesContent: string } {
   const getImageCalls = new Set<string>();
 
   const stringifiedTimelines = timelines.map(timeline => {
     const events = timeline.events.map(event => {
       // Find a unique ID for the image if it exists
       const imageId = event.imageUrl ? `img-${timeline.id}-${event.id}`.replace(/[^a-zA-Z0-9-]/g, '') : null;
-      if (imageId) {
+      if (imageId && event.imageUrl) {
         getImageCalls.add(JSON.stringify({
           id: imageId,
           description: event.title,
@@ -31,7 +32,7 @@ function generateTimelineDataContent(timelines: Timeline[]): string {
 
       return `{
         id: "${event.id}", title: "${event.title.replace(/"/g, '\\"')}", date: "${event.date}", 
-        description: "${event.description.replace(/"/g, '\\"')}",
+        description: "${event.description.replace(/"/g, '\\"').replace(/\n/g, '\\n')}",
         wikipediaUrl: "${event.wikipediaUrl}"${eventImagePart}
       }`;
     }).join(',\n      ');
@@ -48,8 +49,7 @@ function generateTimelineDataContent(timelines: Timeline[]): string {
 
   const allImages = Array.from(getImageCalls).map(s => JSON.parse(s));
 
-  return {
-    timelineContent: `import type { Timeline } from "./types";
+  const timelineContent = `import type { Timeline } from "./types";
 import { PlaceHolderImages } from "./placeholder-images";
 
 const getImage = (id: string) => {
@@ -63,8 +63,13 @@ const getImage = (id: string) => {
 export const initialTimelines: Timeline[] = [
   ${stringifiedTimelines}
 ];
-`,
-    placeholderImagesContent: JSON.stringify({ placeholderImages: allImages }, null, 2)
+`;
+
+  const placeholderImagesContent = JSON.stringify({ placeholderImages: allImages }, null, 2);
+
+  return {
+    timelineContent,
+    placeholderImagesContent
   };
 }
 
@@ -76,15 +81,8 @@ export async function saveTimelines(timelines: Timeline[]) {
     const timelineDataPath = path.join(process.cwd(), 'src', 'lib', 'timeline-data.ts');
     const placeholderImagesPath = path.join(process.cwd(), 'src', 'lib', 'placeholder-images.json');
     
-    // NOTE: This is a placeholder. The AI agent will perform the actual file write.
-    // In a real environment, you would use fs.writeFile here.
-    console.log("---- AI: PLEASE UPDATE THE FOLLOWING FILES ----");
-    console.log("File: " + timelineDataPath);
-    console.log(timelineContent);
-    console.log("----");
-    console.log("File: " + placeholderImagesPath);
-    console.log(placeholderImagesContent);
-    console.log("-------------------------------------------");
+    await fs.writeFile(timelineDataPath, timelineContent, 'utf-8');
+    await fs.writeFile(placeholderImagesPath, placeholderImagesContent, 'utf-8');
 
     return { success: true };
   } catch (error) {

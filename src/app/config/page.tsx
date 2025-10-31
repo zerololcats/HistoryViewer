@@ -15,6 +15,7 @@ import { saveTimelines } from "./actions";
 export default function ConfigPage() {
   const [timelines, setTimelines] = useState<Timeline[]>(initialTimelines);
   const { toast } = useToast();
+  const [isSaving, setIsSaving] = useState(false);
 
   const handleExport = () => {
     const dataStr = JSON.stringify(timelines, null, 2);
@@ -27,11 +28,12 @@ export default function ConfigPage() {
   };
 
   const handleSave = async () => {
+    setIsSaving(true);
     const result = await saveTimelines(timelines);
     if (result.success) {
       toast({
         title: "Changes Saved!",
-        description: "Your timeline data has been permanently updated.",
+        description: "Your timeline data has been updated. Refresh the page to see changes.",
       });
     } else {
        toast({
@@ -40,6 +42,7 @@ export default function ConfigPage() {
         description: result.error || "Could not save your changes.",
       });
     }
+    setIsSaving(false);
   };
 
   return (
@@ -54,9 +57,9 @@ export default function ConfigPage() {
             </Button>
             <h1 className="text-2xl font-headline font-bold text-foreground">Configuration</h1>
           </div>
-          <Button onClick={handleSave}>
+          <Button onClick={handleSave} disabled={isSaving}>
             <Save className="mr-2 h-4 w-4" />
-            Save Changes
+            {isSaving ? "Saving..." : "Save Changes"}
           </Button>
         </div>
       </header>

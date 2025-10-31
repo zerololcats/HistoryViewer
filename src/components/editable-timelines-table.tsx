@@ -5,11 +5,11 @@ import type { Dispatch, SetStateAction } from "react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { PlusCircle, Trash2 } from "lucide-react";
 import type { Timeline, TimelineEvent } from "@/lib/types";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
+import { Textarea } from "./ui/textarea";
 
 interface EditableTimelinesTableProps {
   timelines: Timeline[];
@@ -78,31 +78,34 @@ export function EditableTimelinesTable({ timelines, setTimelines }: EditableTime
       <Accordion type="multiple" className="w-full">
         {timelines.map(timeline => (
           <AccordionItem value={timeline.id} key={timeline.id}>
-             <div className="flex items-center justify-between py-4 border-b">
-                <div className="flex items-center gap-4 flex-grow mr-4">
-                    <Input
-                        value={timeline.name}
-                        onChange={(e) => handleTimelineChange(timeline.id, "name", e.target.value)}
-                        className="font-semibold text-lg flex-grow"
-                    />
-                    <Select
-                        value={timeline.category}
-                        onValueChange={(value) => handleTimelineChange(timeline.id, 'category', value)}
-                    >
-                        <SelectTrigger className="w-[150px]">
-                        <SelectValue placeholder="Category" />
-                        </SelectTrigger>
-                        <SelectContent>
-                        <SelectItem value="general">General</SelectItem>
-                        <SelectItem value="space">Space</SelectItem>
-                        <SelectItem value="war">War</SelectItem>
-                        </SelectContent>
-                    </Select>
-                    <Button variant="ghost" size="icon" onClick={() => handleDeleteTimeline(timeline.id)}>
-                        <Trash2 className="h-4 w-4 text-destructive" />
-                    </Button>
-                </div>
-                <AccordionTrigger />
+             <div className="flex items-center gap-4 py-4 border-b">
+                <AccordionTrigger>
+                  <Input
+                    value={timeline.name}
+                    onChange={(e) => {
+                      e.stopPropagation(); // prevent accordion from toggling
+                      handleTimelineChange(timeline.id, "name", e.target.value)
+                    }}
+                    onClick={(e) => e.stopPropagation()} // prevent accordion from toggling
+                    className="font-semibold text-lg flex-grow"
+                  />
+                </AccordionTrigger>
+                <Select
+                    value={timeline.category}
+                    onValueChange={(value) => handleTimelineChange(timeline.id, 'category', value)}
+                >
+                    <SelectTrigger className="w-[150px]">
+                    <SelectValue placeholder="Category" />
+                    </SelectTrigger>
+                    <SelectContent>
+                    <SelectItem value="general">General</SelectItem>
+                    <SelectItem value="space">Space</SelectItem>
+                    <SelectItem value="war">War</SelectItem>
+                    </SelectContent>
+                </Select>
+                <Button variant="ghost" size="icon" onClick={() => handleDeleteTimeline(timeline.id)}>
+                    <Trash2 className="h-4 w-4 text-destructive" />
+                </Button>
             </div>
             <AccordionContent>
               <div className="overflow-x-auto">
@@ -128,7 +131,7 @@ export function EditableTimelinesTable({ timelines, setTimelines }: EditableTime
                           <Input type="date" value={event.date} onChange={e => handleEventChange(timeline.id, event.id, "date", e.target.value)} />
                         </TableCell>
                         <TableCell>
-                          <Input value={event.description} onChange={e => handleEventChange(timeline.id, event.id, "description", e.target.value)} />
+                          <Textarea value={event.description} onChange={e => handleEventChange(timeline.id, event.id, "description", e.target.value)} />
                         </TableCell>
                         <TableCell>
                           <Input value={event.imageUrl || ''} onChange={e => handleEventChange(timeline.id, event.id, "imageUrl", e.target.value)} />
