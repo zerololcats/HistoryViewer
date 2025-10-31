@@ -80,16 +80,15 @@ export function EditableTimelinesTable({ timelines, setTimelines }: EditableTime
           <AccordionItem value={timeline.id} key={timeline.id}>
              <div className="flex items-center gap-4 py-4 border-b">
                 <AccordionTrigger>
-                  <Input
+                  <span className="font-semibold text-lg flex-grow text-left">
+                    {timeline.name}
+                  </span>
+                </AccordionTrigger>
+                <Input
                     value={timeline.name}
-                    onChange={(e) => {
-                      e.stopPropagation(); // prevent accordion from toggling
-                      handleTimelineChange(timeline.id, "name", e.target.value)
-                    }}
-                    onClick={(e) => e.stopPropagation()} // prevent accordion from toggling
+                    onChange={(e) => handleTimelineChange(timeline.id, "name", e.target.value)}
                     className="font-semibold text-lg flex-grow"
                   />
-                </AccordionTrigger>
                 <Select
                     value={timeline.category}
                     onValueChange={(value) => handleTimelineChange(timeline.id, 'category', value)}
