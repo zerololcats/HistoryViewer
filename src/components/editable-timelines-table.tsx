@@ -78,32 +78,32 @@ export function EditableTimelinesTable({ timelines, setTimelines }: EditableTime
       <Accordion type="multiple" className="w-full">
         {timelines.map(timeline => (
           <AccordionItem value={timeline.id} key={timeline.id}>
-            <AccordionTrigger>
-              <div className="flex items-center gap-4 flex-grow mr-4">
-                <Input
-                  value={timeline.name}
-                  onChange={(e) => handleTimelineChange(timeline.id, "name", e.target.value)}
-                  className="font-semibold text-lg"
-                  onClick={(e) => e.stopPropagation()}
-                />
-                 <Select
-                    value={timeline.category}
-                    onValueChange={(value) => handleTimelineChange(timeline.id, 'category', value)}
-                  >
-                    <SelectTrigger className="w-[150px]" onClick={(e) => e.stopPropagation()}>
-                      <SelectValue placeholder="Category" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="general">General</SelectItem>
-                      <SelectItem value="space">Space</SelectItem>
-                      <SelectItem value="war">War</SelectItem>
-                    </SelectContent>
-                  </Select>
-              </div>
-              <Button variant="ghost" size="icon" onClick={(e) => { e.stopPropagation(); handleDeleteTimeline(timeline.id); }}>
-                  <Trash2 className="h-4 w-4 text-destructive" />
-              </Button>
-            </AccordionTrigger>
+             <div className="flex items-center justify-between py-4 border-b">
+                <div className="flex items-center gap-4 flex-grow mr-4">
+                    <Input
+                    value={timeline.name}
+                    onChange={(e) => handleTimelineChange(timeline.id, "name", e.target.value)}
+                    className="font-semibold text-lg"
+                    />
+                    <Select
+                        value={timeline.category}
+                        onValueChange={(value) => handleTimelineChange(timeline.id, 'category', value)}
+                    >
+                        <SelectTrigger className="w-[150px]">
+                        <SelectValue placeholder="Category" />
+                        </SelectTrigger>
+                        <SelectContent>
+                        <SelectItem value="general">General</SelectItem>
+                        <SelectItem value="space">Space</SelectItem>
+                        <SelectItem value="war">War</SelectItem>
+                        </SelectContent>
+                    </Select>
+                    <Button variant="ghost" size="icon" onClick={() => handleDeleteTimeline(timeline.id)}>
+                        <Trash2 className="h-4 w-4 text-destructive" />
+                    </Button>
+                </div>
+                <AccordionTrigger />
+            </div>
             <AccordionContent>
               <div className="overflow-x-auto">
                 <Table>
