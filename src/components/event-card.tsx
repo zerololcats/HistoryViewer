@@ -77,7 +77,7 @@ export function EventCard({ event, onDelete }: EventCardProps) {
             </div>
           </CardHeader>
           <CardContent className="h-48 cursor-pointer" onClick={() => setDetailModalOpen(true)}>
-            {event.imageUrl ? (
+            {event.imageUrl && event.imageUrl.trim() !== '' ? (
               <div className="relative h-full w-full overflow-hidden rounded-md">
                 <Image
                   src={event.imageUrl}
