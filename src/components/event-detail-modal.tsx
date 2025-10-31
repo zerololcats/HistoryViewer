@@ -35,7 +35,7 @@ export function EventDetailModal({
         </DialogHeader>
         <div className="grid gap-4 py-4">
           {event.imageUrl && event.imageUrl.trim() !== '' ? (
-            <div className="relative h-64 w-full overflow-hidden rounded-md bg-secondary">
+            <div className="relative h-64 w-full overflow-hidden rounded-md">
               <Image
                 src={event.imageUrl}
                 alt={event.title}
