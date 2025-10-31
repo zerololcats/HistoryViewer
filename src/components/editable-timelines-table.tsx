@@ -131,7 +131,7 @@ export function EditableTimelinesTable({ timelines, setTimelines }: EditableTime
                           <Input value={event.description} onChange={e => handleEventChange(timeline.id, event.id, "description", e.target.value)} />
                         </TableCell>
                         <TableCell>
-                          <Input value={event.imageUrl} onChange={e => handleEventChange(timeline.id, event.id, "imageUrl", e.target.value)} />
+                          <Input value={event.imageUrl || ''} onChange={e => handleEventChange(timeline.id, event.id, "imageUrl", e.target.value)} />
                         </TableCell>
                         <TableCell>
                           <Input value={event.wikipediaUrl} onChange={e => handleEventChange(timeline.id, event.id, "wikipediaUrl", e.target.value)} />
