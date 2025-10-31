@@ -1,326 +1,326 @@
 {
   "placeholderImages": [
     {
-      "id": "ge-1",
-      "description": "Gutenberg's printing press",
+      "id": "img-general-events-ge-3",
+      "description": "Start of the Renaissance",
+      "imageUrl": "https://images.unsplash.com/flagged/photo-1572392640988-ba48d1a74457?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxyZW5haXNzYW5jZSUyMGFydHxlbnwwfHx8fDE3NjE2NTEzMjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "renaissance art"
+    },
+    {
+      "id": "img-general-events-ge-1",
+      "description": "Invention of the Printing Press",
       "imageUrl": "https://images.unsplash.com/photo-1693031630369-bd429a57f115?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwcmludGluZyUyMHByZXNzfGVufDB8fHx8MTc2MTcxNzg5M3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "printing press"
     },
     {
-      "id": "ge-2",
+      "id": "img-general-events-ge-2",
       "description": "Fall of Constantinople",
       "imageUrl": "https://images.unsplash.com/photo-1471724603960-98bc193c621d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhbmNpZW50JTIwY2l0eXxlbnwwfHx8fDE3NjE2NzU5NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "ancient city"
     },
     {
-      "id": "ge-3",
-      "description": "Beginning of the Renaissance",
-      "imageUrl": "https://images.unsplash.com/flagged/photo-1572392640988-ba48d1a74457?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxyZW5haXNzYW5jZSUyMGFydHxlbnwwfHx8fDE3NjE2NTEzMjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "renaissance art"
-    },
-    {
-      "id": "ge-4",
-      "description": "Columbus reaches the Americas",
+      "id": "img-general-events-ge-4",
+      "description": "Columbus' First Voyage",
       "imageUrl": "https://images.unsplash.com/photo-1625509976131-86d1ba268e09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxvbGQlMjBzaGlwfGVufDB8fHx8MTc2MTc1NDIwM3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "old ship"
     },
     {
-      "id": "ge-5",
-      "description": "Start of the Protestant Reformation",
+      "id": "img-general-events-ge-5",
+      "description": "Protestant Reformation",
       "imageUrl": "https://images.unsplash.com/photo-1496401852343-cfe57facee4e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8b2xkJTIwY2h1cmNofGVufDB8fHx8MTc2MTc1NDIwM3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "old church"
     },
     {
-      "id": "ge-6",
-      "description": "Beginning of the French Revolution",
+      "id": "img-general-events-ge-6",
+      "description": "French Revolution Begins",
       "imageUrl": "https://images.unsplash.com/photo-1726347915023-1ac5ee3ec287?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxyZXZvbHV0aW9uJTIwYmF0dGxlfGVufDB8fHx8MTc2MTc1NDIwM3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "revolution battle"
     },
     {
-      "id": "ge-7",
-      "description": "Invention of the telephone",
+      "id": "img-general-events-ge-7",
+      "description": "Invention of the Telephone",
       "imageUrl": "https://images.unsplash.com/photo-1557180295-76eee20ae8aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx2aW50YWdlJTIwdGVsZXBob25lfGVufDB8fHx8MTc2MTcwODA3NXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "vintage telephone"
     },
     {
-      "id": "ge-8",
-      "description": "Wright brothers' first flight",
+      "id": "img-general-events-ge-8",
+      "description": "First Powered Flight",
       "imageUrl": "https://images.unsplash.com/photo-1640273403977-20bee775a9cb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxvbGQlMjBhaXJwbGFuZXxlbnwwfHx8fDE3NjE3NTQyMDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "old airplane"
     },
     {
-      "id": "ge-9",
+      "id": "img-general-events-ge-9",
       "description": "Discovery of Penicillin",
       "imageUrl": "https://images.unsplash.com/photo-1582719471384-894fbb16e074?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c2NpZW5jZSUyMGxhYnxlbnwwfHx8fDE3NjE2NjczMzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "science lab"
     },
     {
-      "id": "ge-10",
+      "id": "img-general-events-ge-10",
       "description": "Invention of the World Wide Web",
       "imageUrl": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjb21wdXRlciUyMGNvZGV8ZW58MHx8fHwxNzYxNzAzMzMxfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "computer code"
     },
     {
-      "id": "sr-1",
-      "description": "Launch of Sputnik 1",
+      "id": "img-space-race-sr-1",
+      "description": "Sputnik 1 Launch",
       "imageUrl": "https://images.unsplash.com/photo-1446776709462-d6b525c57bd3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzYXRlbGxpdGUlMjBzcGFjZXxlbnwwfHx8fDE3NjE3MTYyODF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "satellite space"
     },
     {
-      "id": "sr-2",
-      "description": "Launch of Explorer 1",
+      "id": "img-space-race-sr-2",
+      "description": "Explorer 1 Launch",
       "imageUrl": "https://images.unsplash.com/photo-1517976487492-5750f3195933?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxyb2NrZXQlMjBsYXVuY2h8ZW58MHx8fHwxNzYxNzQ3Njk4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "rocket launch"
     },
     {
-      "id": "sr-3",
-      "description": "Yuri Gagarin becomes the first man in space",
+      "id": "img-space-race-sr-3",
+      "description": "First Man in Space",
       "imageUrl": "https://images.unsplash.com/photo-1536697246787-1f7ae568d89a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhc3Ryb25hdXQlMjBoZWxtZXR8ZW58MHx8fHwxNzYxNzU0MjAzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "astronaut helmet"
     },
     {
-      "id": "sr-4",
-      "description": "Alan Shepard becomes the first American in space",
+      "id": "img-space-race-sr-4",
+      "description": "First American in Space",
       "imageUrl": "https://images.unsplash.com/photo-1601892782633-675465fa7f3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzcGFjZSUyMGNhcHN1bGV8ZW58MHx8fHwxNzYxNzU0MjAzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "space capsule"
     },
     {
-      "id": "sr-5",
-      "description": "John Glenn orbits the Earth",
+      "id": "img-space-race-sr-5",
+      "description": "First American to Orbit Earth",
       "imageUrl": "https://images.unsplash.com/photo-1534996858221-380b92700493?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxlYXJ0aCUyMG9yYml0fGVufDB8fHx8MTc2MTc1NDIwM3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "earth orbit"
     },
     {
-      "id": "sr-6",
-      "description": "Valentina Tereshkova becomes the first woman in space",
+      "id": "img-space-race-sr-6",
+      "description": "First Woman in Space",
       "imageUrl": "https://images.unsplash.com/photo-1678392277306-a3f9c2c70eaa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b21hbiUyMGFzdHJvbmF1dHxlbnwwfHx8fDE3NjE3NTQyMDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "woman astronaut"
     },
     {
-      "id": "sr-7",
-      "description": "First spacewalk by Alexei Leonov",
+      "id": "img-space-race-sr-7",
+      "description": "First Spacewalk",
       "imageUrl": "https://images.unsplash.com/photo-1620428268482-cf1851a36764?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzcGFjZXdhbGslMjBhc3Ryb25hdXR8ZW58MHx8fHwxNzYxNzU0MjAzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "spacewalk astronaut"
     },
     {
-      "id": "sr-8",
-      "description": "Apollo 8 orbits the Moon",
+      "id": "img-space-race-sr-8",
+      "description": "Apollo 8 Orbits the Moon",
       "imageUrl": "https://images.unsplash.com/photo-1686861453864-9b2a22a97fc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtb29uJTIwc3VyZmFjZXxlbnwwfHx8fDE3NjE2NTk2MzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "moon surface"
     },
     {
-      "id": "sr-9",
-      "description": "Apollo 11 lands on the Moon",
+      "id": "img-space-race-sr-9",
+      "description": "Apollo 11 Moon Landing",
       "imageUrl": "https://images.unsplash.com/photo-1687468948114-61334bb8d9cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtb29uJTIwbGFuZGluZ3xlbnwwfHx8fDE3NjE2NjYxMTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "moon landing"
     },
     {
-      "id": "sr-10",
-      "description": "Launch of the International Space Station's first module",
+      "id": "img-space-race-sr-10",
+      "description": "ISS First Module Launch",
       "imageUrl": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzcGFjZSUyMHN0YXRpb258ZW58MHx8fHwxNzYxNzEwMzU1fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "space station"
     },
     {
-      "id": "ww2-1",
-      "description": "Germany invades Poland",
+      "id": "img-world-war-2-ww2-1",
+      "description": "Invasion of Poland",
       "imageUrl": "https://images.unsplash.com/photo-1658607204103-207c1c027a8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx0YW5rcyUyMHdhcnxlbnwwfHx8fDE3NjE3NTQyMDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "tanks war"
     },
     {
-      "id": "ww2-2",
-      "description": "Battle of Britain begins",
+      "id": "img-world-war-2-ww2-2",
+      "description": "Battle of Britain",
       "imageUrl": "https://images.unsplash.com/photo-1634847339368-be8c58e8c4a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxmaWdodGVyJTIwcGxhbmVzfGVufDB8fHx8MTc2MTc1NDIwM3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "fighter planes"
     },
     {
-      "id": "ww2-3",
-      "description": "Germany invades the Soviet Union (Operation Barbarossa)",
+      "id": "img-world-war-2-ww2-3",
+      "description": "Operation Barbarossa",
       "imageUrl": "https://images.unsplash.com/photo-1638519947025-153407c3c46a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx3aW50ZXIlMjB3YXJ8ZW58MHx8fHwxNzYxNzU0MjAzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "winter war"
     },
     {
-      "id": "ww2-4",
+      "id": "img-world-war-2-ww2-4",
       "description": "Attack on Pearl Harbor",
       "imageUrl": "https://images.unsplash.com/photo-1649344188929-3dddeb95747d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxiYXR0bGVzaGlwJTIwZXhwbG9zaW9ufGVufDB8fHx8MTc2MTc1NDIwM3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "battleship explosion"
     },
     {
-      "id": "ww2-5",
-      "description": "Battle of Stalingrad begins",
+      "id": "img-world-war-2-ww2-5",
+      "description": "Battle of Stalingrad",
       "imageUrl": "https://images.unsplash.com/photo-1638890791979-e76a1f769d05?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cnVpbmVkJTIwY2l0eXxlbnwwfHx8fDE3NjE2ODcwNDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "ruined city"
     },
     {
-      "id": "ww2-6",
-      "description": "D-Day: Allied invasion of Normandy",
+      "id": "img-world-war-2-ww2-6",
+      "description": "D-Day",
       "imageUrl": "https://images.unsplash.com/photo-1635159195486-df88d3cea039?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiZWFjaCUyMGludmFzaW9ufGVufDB8fHx8MTc2MTc1NDIwM3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "beach invasion"
     },
     {
-      "id": "ww2-7",
+      "id": "img-world-war-2-ww2-7",
       "description": "Battle of the Bulge",
       "imageUrl": "https://images.unsplash.com/photo-1641743441742-8671236e38fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzbm93eSUyMGZvcmVzdHxlbnwwfHx8fDE3NjE3NTQyMDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "snowy forest"
     },
     {
-      "id": "ww2-8",
-      "description": "V-E Day (Victory in Europe)",
+      "id": "img-world-war-2-ww2-8",
+      "description": "Victory in Europe Day",
       "imageUrl": "https://images.unsplash.com/photo-1732825605764-e98ebc7d987c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjcm93ZCUyMGNlbGVicmF0aW5nfGVufDB8fHx8MTc2MTc1NDIwM3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "crowd celebrating"
     },
     {
-      "id": "ww2-9",
-      "description": "Atomic bombing of Hiroshima",
+      "id": "img-world-war-2-ww2-9",
+      "description": "Atomic Bombing of Hiroshima",
       "imageUrl": "https://images.unsplash.com/photo-1669954415525-c52813168154?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxhdG9taWMlMjBib21ifGVufDB8fHx8MTc2MTc1NDIwM3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "atomic bomb"
     },
     {
-      "id": "ww2-10",
-      "description": "V-J Day (Victory over Japan)",
+      "id": "img-world-war-2-ww2-10",
+      "description": "Victory over Japan Day",
       "imageUrl": "https://images.unsplash.com/photo-1664241486347-726dfd2500f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb25mZXR0aSUyMHBhcmFkZXxlbnwwfHx8fDE3NjE3NTQyMDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "confetti parade"
     },
     {
-      "id": "ww1-1",
+      "id": "img-world-war-1-ww1-1",
       "description": "Assassination of Archduke Franz Ferdinand",
-      "imageUrl": "https://images.unsplash.com/photo-1618144211130-9b45943b190f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvbGQlMjBjYXJ8ZW58MHx8fHwxNzYxNzU1MjM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Ferdinand_Schmutzer_-_Franz_Ferdinand_von_%C3%96sterreich-Este%2C_um_1914_%28cropped%29.jpg/800px-Ferdinand_Schmutzer_-_Franz_Ferdinand_von_%C3%96sterreich-Este%2C_um_1914_%28cropped%29.jpg",
       "imageHint": "old car"
     },
     {
-      "id": "ww1-2",
-      "description": "Austria-Hungary declares war on Serbia",
+      "id": "img-world-war-1-ww1-2",
+      "description": "Austria-Hungary Declares War on Serbia",
       "imageUrl": "https://images.unsplash.com/photo-1596521798344-644e59048a14?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwYXBlciUyMGRlY2xhcmF0aW9ufGVufDB8fHx8MTc2MjAwNTkzM3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "paper declaration"
     },
     {
-      "id": "ww1-3",
-      "description": "Germany invades Belgium",
+      "id": "img-world-war-1-ww1-16",
+      "description": "Germany Declares War on Russia",
+      "imageUrl": "https://images.unsplash.com/photo-1605151892866-b5278148b036?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnZXJtYW4lMjBydXNzaWFuJTIwZmxhZ3N8ZW58MHx8fHwxNzYyMDA1OTMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "german russian"
+    },
+    {
+      "id": "img-world-war-1-ww1-3",
+      "description": "Germany Invades Belgium",
       "imageUrl": "https://images.unsplash.com/photo-1549642338-9239851e5138?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiZWxnaXVtJTIwZmxhZ3xlbnwwfHx8fDE3NjIwMDU5MzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "belgium flag"
     },
     {
-      "id": "ww1-4",
+      "id": "img-world-war-1-ww1-4",
       "description": "Battle of Tannenberg",
       "imageUrl": "https://images.unsplash.com/photo-1587805134789-983e2049e7b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiYXR0bGUlMjBmaWVsZHxlbnwwfHx8fDE3NjE3NTUyMzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "battle field"
     },
     {
-      "id": "ww1-5",
+      "id": "img-world-war-1-ww1-5",
       "description": "First Battle of the Marne",
       "imageUrl": "https://images.unsplash.com/photo-1603590074212-320491032333?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx0cmVuY2glMjB3YXJmYXJlfGVufDB8fHx8MTc2MTc1NTIzNHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "trench warfare"
     },
     {
-      "id": "ww1-6",
-      "description": "Turkey joins Central Powers",
+      "id": "img-world-war-1-ww1-6",
+      "description": "Ottoman Empire Joins Central Powers",
       "imageUrl": "https://images.unsplash.com/photo-1524168282322-243b67a54a21?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0dXJraXNoJTIwZmxhZ3xlbnwwfHx8fDE3NjIwMDU5MzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "turkish flag"
     },
     {
-      "id": "ww1-7",
+      "id": "img-world-war-1-ww1-17",
+      "description": "Gallipoli Campaign Begins",
+      "imageUrl": "https://images.unsplash.com/photo-1589252086915-12d837f4a56a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiZWFjaCUyMGxhbmRpbmd8ZW58MHx8fHwxNzYyMDA1OTMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "beach landing"
+    },
+    {
+      "id": "img-world-war-1-ww1-7",
       "description": "Sinking of the RMS Lusitania",
       "imageUrl": "https://images.unsplash.com/photo-1549400519-715c92851d7c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjcnVpc2UlMjBzaGlwfGVufDB8fHx8MTc2MTc1NTIzNHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "cruise ship"
     },
     {
-      "id": "ww1-8",
-      "description": "Battle of Verdun",
-      "imageUrl": "https://images.unsplash.com/photo-1603590074212-320491032333?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx0cmVuY2glMjB3YXJmYXJlfGVufDB8fHx8MTc2MTc1NTIzNHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "trench warfare"
-    },
-    {
-      "id": "ww1-9",
-      "description": "Battle of the Somme",
-      "imageUrl": "https://images.unsplash.com/photo-1587805134789-983e2049e7b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiYXR0bGUlMjBmaWVsZHxlbnwwfHx8fDE3NjE3NTUyMzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "battle field"
-    },
-    {
-      "id": "ww1-10",
-      "description": "United States declares war on Germany",
-      "imageUrl": "https://images.unsplash.com/photo-1575978184472-03b5a19e599b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvbGQlMjBhbWVyaWNhbiUyMGZsYWd8ZW58MHx8fHwxNzYxNzU1MjM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "american flag"
-    },
-    {
-      "id": "ww1-11",
-      "description": "The October Revolution in Russia",
-      "imageUrl": "https://images.unsplash.com/photo-1583389783930-1ins_upload-v1627915394-s9k5b4y2h4a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzb3ZpZXQlMjByZXZvbHV0aW9ufGVufDB8fHx8MTc2MTc1NTIzNHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "soviet revolution"
-    },
-    {
-      "id": "ww1-12",
-      "description": "President Wilson's Fourteen Points speech",
-      "imageUrl": "https://images.unsplash.com/photo-1621927719992-031e018c1d3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx1cyUyMGNhcGl0b2x8ZW58MHx8fHwxNzYxNzU1MjM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "us capitol"
-    },
-    {
-      "id": "ww1-13",
-      "description": "Armistice Day",
-      "imageUrl": "https://images.unsplash.com/photo-1542183293-c9e2056d10f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwZWFjZSUyMGRvdmV8ZW58MHx8fHwxNzYxNzU1MjM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "peace dove"
-    },
-    {
-      "id": "ww1-14",
-      "description": "Treaty of Versailles is signed",
-      "imageUrl": "https://images.unsplash.com/photo-1529156069898-fac519c4b73b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvZmZpY2lhbCUyMGRvY3VtZW50fGVufDB8fHx8MTc2MTc1NTIzNHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "official document"
-    },
-    {
-      "id": "ww1-15",
-      "description": "League of Nations is founded",
-      "imageUrl": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbnRlcm5hdGlvbmFsJTIwZmxhZ3N8ZW58MHx8fHwxNzYxNzU1MjM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "international flags"
-    },
-    {
-      "id": "ww1-16",
-      "description": "Germany declares war on Russia",
-      "imageUrl": "https://images.unsplash.com/photo-1605151892866-b5278148b036?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnZXJtYW4lMjBydXNzaWFuJTIwZmxhZ3N8ZW58MHx8fHwxNzYyMDA1OTMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "german russian"
-    },
-    {
-      "id": "ww1-17",
-      "description": "Gallipoli Campaign",
-      "imageUrl": "https://images.unsplash.com/photo-1589252086915-12d837f4a56a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiZWFjaCUyMGxhbmRpbmd8ZW58MHx8fHwxNzYyMDA1OTMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "beach landing"
-    },
-    {
-      "id": "ww1-18",
-      "description": "Italy declares war on Austria-Hungary",
+      "id": "img-world-war-1-ww1-18",
+      "description": "Italy Declares War on Austria-Hungary",
       "imageUrl": "https://images.unsplash.com/photo-1618146747239-17c18a99478f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpdGFsaWFuJTIwZmxhZ3xlbnwwfHx8fDE3NjIwMDU5MzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "italian flag"
     },
     {
-      "id": "ww1-19",
-      "description": "Kaiser Wilhelm II abdicates",
-      "imageUrl": "https://images.unsplash.com/photo-1551299933-2868a834ab43?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjcm93biUyMG9uJTIwdmVsdmV0fGVufDB8fHx8MTc2MjAwNTkzM3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "royal crown"
+      "id": "img-world-war-1-ww1-8",
+      "description": "Battle of Verdun Begins",
+      "imageUrl": "https://images.unsplash.com/photo-1603590074212-320491032333?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx0cmVuY2glMjB3YXJmYXJlfGVufDB8fHx8MTc2MTc1NTIzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "trench warfare"
     },
     {
-      "id": "ww1-20",
-      "description": "Zimmermann Telegram",
+      "id": "img-world-war-1-ww1-9",
+      "description": "Battle of the Somme Begins",
+      "imageUrl": "https://images.unsplash.com/photo-1587805134789-983e2049e7b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiYXR0bGUlMjBmaWVsZHxlbnwwfHx8fDE3NjE3NTUyMzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "battle field"
+    },
+    {
+      "id": "img-world-war-1-ww1-20",
+      "description": "Zimmermann Telegram Intercepted",
       "imageUrl": "https://images.unsplash.com/photo-1586749989134-36519522775f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvbGQlMjB0ZWxlZ3JhbXxlbnwwfHx8fDE3NjIwMDU5MzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "old telegram"
     },
     {
-      "id": "ww1-21",
-      "description": "Russia signs Treaty of Brest-Litovsk",
+      "id": "img-world-war-1-ww1-10",
+      "description": "U.S. Declares War on Germany",
+      "imageUrl": "https://images.unsplash.com/photo-1575978184472-03b5a19e599b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvbGQlMjBhbWVyaWNhbiUyMGZsYWd8ZW58MHx8fHwxNzYxNzU1MjM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "american flag"
+    },
+    {
+      "id": "img-world-war-1-ww1-11",
+      "description": "The October Revolution",
+      "imageUrl": "https://images.unsplash.com/photo-1583389783930-1ins_upload-v1627915394-s9k5b4y2h4a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzb3ZpZXQlMjByZXZvbHV0aW9ufGVufDB8fHx8MTc2MTc1NTIzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "soviet revolution"
+    },
+    {
+      "id": "img-world-war-1-ww1-12",
+      "description": "Wilson's Fourteen Points Speech",
+      "imageUrl": "https://images.unsplash.com/photo-1621927719992-031e018c1d3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx1cyUyMGNhcGl0b2x8ZW58MHx8fHwxNzYxNzU1MjM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "us capitol"
+    },
+    {
+      "id": "img-world-war-1-ww1-21",
+      "description": "Russia Signs Treaty of Brest-Litovsk",
       "imageUrl": "https://images.unsplash.com/photo-1529156069898-fac519c4b73b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvZmZpY2lhbCUyMGRvY3VtZW50fGVufDB8fHx8MTc2MTc1NTIzNHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "official document"
     },
     {
-      "id": "ww1-22",
+      "id": "img-world-war-1-ww1-22",
       "description": "Second Battle of the Marne",
       "imageUrl": "https://images.unsplash.com/photo-1519782414729-198c69f70620?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyaXZlciUyMGJhdHRsZXxlbnwwfHx8fDE3NjIwMDU5MzN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "river battle"
     },
     {
-      "id": "ww1-23",
-      "description": "Paris Peace Conference",
+      "id": "img-world-war-1-ww1-19",
+      "description": "Kaiser Wilhelm II Abdicates",
+      "imageUrl": "https://images.unsplash.com/photo-1551299933-2868a834ab43?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjcm93biUyMG9uJTIwdmVsdmV0fGVufDB8fHx8MTc2MjAwNTkzM3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "royal crown"
+    },
+    {
+      "id": "img-world-war-1-ww1-13",
+      "description": "Armistice Day",
+      "imageUrl": "https://images.unsplash.com/photo-1542183293-c9e2056d10f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwZWFjZSUyMGRvdmV8ZW58MHx8fHwxNzYxNzU1MjM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "peace dove"
+    },
+    {
+      "id": "img-world-war-1-ww1-23",
+      "description": "Paris Peace Conference Begins",
       "imageUrl": "https://images.unsplash.com/photo-1518895318357-96e77e81e335?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwYXJpcyUyMGxhbmRtYXJrfGVufDB8fHx8MTc2MjAwNTkzM3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "paris landmark"
     },
     {
-      "id": "ww1-24",
-      "description": "U.S. Senate rejects Treaty of Versailles",
+      "id": "img-world-war-1-ww1-14",
+      "description": "Treaty of Versailles Signed",
+      "imageUrl": "https://images.unsplash.com/photo-1529156069898-fac519c4b73b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvZmZpY2lhbCUyMGRvY3VtZW50fGVufDB8fHx8MTc2MTc1NTIzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "official document"
+    },
+    {
+      "id": "img-world-war-1-ww1-15",
+      "description": "League of Nations Founded",
+      "imageUrl": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbnRlcm5hdGlvbmFsJTIwZmxhZ3N8ZW58MHx8fHwxNzYxNzU1MjM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "international flags"
+    },
+    {
+      "id": "img-world-war-1-ww1-24",
+      "description": "U.S. Senate Rejects Treaty of Versailles",
       "imageUrl": "https://images.unsplash.com/photo-1621927719992-031e018c1d3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx1cyUyMGNhcGl0b2x8ZW58MHx8fHwxNzYxNzU1MjM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "us capitol"
     }
