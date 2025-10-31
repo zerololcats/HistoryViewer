@@ -179,6 +179,66 @@
       "description": "V-J Day (Victory over Japan)",
       "imageUrl": "https://images.unsplash.com/photo-1664241486347-726dfd2500f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb25mZXR0aSUyMHBhcmFkZXxlbnwwfHx8fDE3NjE3NTQyMDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "confetti parade"
+    },
+    {
+      "id": "ww1-1",
+      "description": "Assassination of Archduke Franz Ferdinand",
+      "imageUrl": "https://images.unsplash.com/photo-1618144211130-9b45943b190f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvbGQlMjBjYXJ8ZW58MHx8fHwxNzYxNzU1MjM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "old car"
+    },
+    {
+      "id": "ww1-2",
+      "description": "Sinking of the RMS Lusitania",
+      "imageUrl": "https://images.unsplash.com/photo-1549400519-715c92851d7c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjcnVpc2UlMjBzaGlwfGVufDB8fHx8MTc2MTc1NTIzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cruise ship"
+    },
+    {
+      "id": "ww1-3",
+      "description": "Battle of Verdun",
+      "imageUrl": "https://images.unsplash.com/photo-1603590074212-320491032333?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx0cmVuY2glMjB3YXJmYXJlfGVufDB8fHx8MTc2MTc1NTIzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "trench warfare"
+    },
+    {
+      "id": "ww1-4",
+      "description": "Battle of the Somme",
+      "imageUrl": "https://images.unsplash.com/photo-1587805134789-983e2049e7b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiYXR0bGUlMjBmaWVsZHxlbnwwfHx8fDE3NjE3NTUyMzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "battle field"
+    },
+    {
+      "id": "ww1-5",
+      "description": "United States declares war on Germany",
+      "imageUrl": "https://images.unsplash.com/photo-1575978184472-03b5a19e599b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvbGQlMjBhbWVyaWNhbiUyMGZsYWd8ZW58MHx8fHwxNzYxNzU1MjM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "american flag"
+    },
+    {
+      "id": "ww1-6",
+      "description": "The October Revolution in Russia",
+      "imageUrl": "https://images.unsplash.com/photo-1583389783930-1ins_upload-v1627915394-s9k5b4y2h4a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzb3ZpZXQlMjByZXZvbHV0aW9ufGVufDB8fHx8MTc2MTc1NTIzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "soviet revolution"
+    },
+    {
+      "id": "ww1-7",
+      "description": "President Wilson's Fourteen Points speech",
+      "imageUrl": "https://images.unsplash.com/photo-1621927719992-031e018c1d3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx1cyUyMGNhcGl0b2x8ZW58MHx8fHwxNzYxNzU1MjM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "us capitol"
+    },
+    {
+      "id": "ww1-8",
+      "description": "Armistice Day",
+      "imageUrl": "https://images.unsplash.com/photo-1542183293-c9e2056d10f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwZWFjZSUyMGRvdmV8ZW58MHx8fHwxNzYxNzU1MjM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "peace dove"
+    },
+    {
+      "id": "ww1-9",
+      "description": "Treaty of Versailles is signed",
+      "imageUrl": "https://images.unsplash.com/photo-1529156069898-fac519c4b73b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvZmZpY2lhbCUyMGRvY3VtZW50fGVufDB8fHx8MTc2MTc1NTIzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "official document"
+    },
+    {
+      "id": "ww1-10",
+      "description": "League of Nations is founded",
+      "imageUrl": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbnRlcm5hdGlvbmFsJTIwZmxhZ3N8ZW58MHx8fHwxNzYxNzU1MjM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "international flags"
     }
   ]
 }

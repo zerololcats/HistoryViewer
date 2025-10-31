@@ -178,4 +178,61 @@ export const initialTimelines: Timeline[] = [
       },
     ].sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()),
   },
+  {
+    id: "world-war-1",
+    name: "World War I",
+    category: "war",
+    events: [
+      {
+        id: "ww1-1", title: "Assassination of Archduke Franz Ferdinand", date: "1914-06-28",
+        description: "Archduke Franz Ferdinand of Austria and his wife Sophie are assassinated in Sarajevo, sparking the war.",
+        wikipediaUrl: "https://en.wikipedia.org/wiki/Assassination_of_Archduke_Franz_Ferdinand", ...getImage("ww1-1"),
+      },
+      {
+        id: "ww1-2", title: "Sinking of the RMS Lusitania", date: "1915-05-07",
+        description: "A German U-boat sinks the British passenger liner Lusitania, killing 1,198 people, including 128 Americans.",
+        wikipediaUrl: "https://en.wikipedia.org/wiki/Sinking_of_the_RMS_Lusitania", ...getImage("ww1-2"),
+      },
+      {
+        id: "ww1-3", title: "Battle of Verdun", date: "1916-02-21",
+        description: "One of the longest and bloodiest battles of the war begins between German and French forces.",
+        wikipediaUrl: "https://en.wikipedia.org/wiki/Battle_of_Verdun", ...getImage("ww1-3"),
+      },
+      {
+        id: "ww1-4", title: "Battle of the Somme", date: "1916-07-01",
+        description: "The British and French armies launch a major offensive, resulting in one of the deadliest battles in human history.",
+        wikipediaUrl: "https://en.wikipedia.org/wiki/Battle_of_the_Somme", ...getImage("ww1-4"),
+      },
+      {
+        id: "ww1-5", title: "U.S. Declares War on Germany", date: "1917-04-06",
+        description: "The United States enters World War I, declaring war on Germany.",
+        wikipediaUrl: "https://en.wikipedia.org/wiki/American_entry_into_World_War_I", ...getImage("ww1-5"),
+      },
+      {
+        id: "ww1-6", title: "The October Revolution", date: "1917-11-07",
+        description: "The Bolsheviks, led by Vladimir Lenin, overthrow the Russian government, leading to Russia's withdrawal from the war.",
+        wikipediaUrl: "https://en.wikipedia.org/wiki/October_Revolution", ...getImage("ww1-6"),
+      },
+      {
+        id: "ww1-7", title: "Wilson's Fourteen Points", date: "1918-01-08",
+        description: "President Woodrow Wilson outlines his Fourteen Points for peace in a speech to the U.S. Congress.",
+        wikipediaUrl: "https://en.wikipedia.org/wiki/Fourteen_Points", ...getImage("ww1-7"),
+      },
+      {
+        id: "ww1-8", title: "Armistice Day", date: "1918-11-11",
+        description: "An armistice is signed between the Allies and Germany, ending the fighting on the Western Front.",
+        wikipediaUrl: "https://en.wikipedia.org/wiki/Armistice_of_11_November_1918", ...getImage("ww1-8"),
+      },
+      {
+        id: "ww1-9", title: "Treaty of Versailles Signed", date: "1919-06-28",
+        description: "The Treaty of Versailles is signed, formally ending the war and imposing heavy reparations on Germany.",
+        wikipediaUrl: "https://en.wikipedia.org/wiki/Treaty_of_Versailles", ...getImage("ww1-9"),
+      },
+      {
+        id: "ww1-10", title: "League of Nations Founded", date: "1920-01-10",
+        description: "The League of Nations, an intergovernmental organization, is founded as a result of the Paris Peace Conference.",
+        wikipediaUrl: "https://en.wikipedia.org/wiki/League_of_Nations", ...getImage("ww1-10"),
+      },
+    ].sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()),
+  },
 ];
